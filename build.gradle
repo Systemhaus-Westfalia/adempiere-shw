@@ -6,7 +6,7 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven {
-    	url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+    	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/shw-customizations"
         credentials {
         	username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
             password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
@@ -15,8 +15,8 @@ repositories {
 }
 
 ext {
-    libraryRepo  = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-customizations"
-    patchVersion = System.getenv("ADEMPIERE_LIBRARY_VERSION") ?: "local-1.0.0"
+    libraryRepo  = "https://maven.pkg.github.com/Systemhaus-Westfalia/shw-customizations"
+    patchVersion = System.getenv("ADEMPIERE_LIBRARY_VERSION") ?: "local-1.0.1"
     baseVersion  = "3.9.4.001"
     baseGroupId  = "io.github.adempiere"
     publishGroupId  = "org.shw"
@@ -32,31 +32,31 @@ dependencies {
         ]
     )
    	//	Patches Libraries
-    api project(':adempiere-customizations.base')
-   	// api project(':adempiere-customizations.adempiere.test')
-   	// api project(':adempiere-customizations.asset')
-   	// api project(':adempiere-customizations.cashflow')
-   	// api project(':adempiere-customizations.crm')
-   	// api project(':adempiere-customizations.discord-notifier')
-   	// api project(':adempiere-customizations.distribution')
-   	// api project(':adempiere-customizations.extend')
-   	// api project(':adempiere-customizations.freight')
-   	// api project(':adempiere-customizations.human-resource-and-payroll')
-   	// api project(':adempiere-customizations.investment-and-loan')
-   	// api project(':adempiere-customizations.jasperreports')
-   	// api project(':adempiere-customizations.loan')
-   	// api project(':adempiere-customizations.manufacturing')
-   	// api project(':adempiere-customizations.migration')
-   	// api project(':adempiere-customizations.openid-authentication')
-   	// api project(':adempiere-customizations.point-of-sales')
-   	// api project(':adempiere-customizations.production')
-   	// api project(':adempiere-customizations.project')
-   	// api project(':adempiere-customizations.request')
-   	// api project(':adempiere-customizations.store')
-   	// api project(':adempiere-customizations.telegram-notifier')
-   	// api project(':adempiere-customizations.time-and-attendance')
-   	// api project(':adempiere-customizations.tools')
-   	// api project(':adempiere-customizations.wms')
+    api project(':shw-customizations.base')
+   	// api project(':shw-customizations.adempiere.test')
+   	// api project(':shw-customizations.asset')
+   	// api project(':shw-customizations.cashflow')
+   	// api project(':shw-customizations.crm')
+   	// api project(':shw-customizations.discord-notifier')
+   	// api project(':shw-customizations.distribution')
+   	// api project(':shw-customizations.extend')
+   	// api project(':shw-customizations.freight')
+   	// api project(':shw-customizations.human-resource-and-payroll')
+   	// api project(':shw-customizations.investment-and-loan')
+   	// api project(':shw-customizations.jasperreports')
+   	// api project(':shw-customizations.loan')
+   	// api project(':shw-customizations.manufacturing')
+   	// api project(':shw-customizations.migration')
+   	// api project(':shw-customizations.openid-authentication')
+   	// api project(':shw-customizations.point-of-sales')
+   	// api project(':shw-customizations.production')
+   	// api project(':shw-customizations.project')
+   	// api project(':shw-customizations.request')
+   	// api project(':shw-customizations.store')
+   	// api project(':shw-customizations.telegram-notifier')
+   	// api project(':shw-customizations.time-and-attendance')
+   	// api project(':shw-customizations.tools')
+   	// api project(':shw-customizations.wms')
    	
 }
 
@@ -84,7 +84,7 @@ publishing {
     publications {
         maven(MavenPublication) {
 			groupId = publishGroupId
-			artifactId = 'adempiere-customizations'
+			artifactId = 'shw-customizations'
 			version = patchVersion
            	from components.java
            	pom {

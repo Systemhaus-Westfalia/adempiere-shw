@@ -14,7 +14,7 @@ repositories {
     mavenCentral()
     mavenLocal()
     maven {
-    	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-customizations"
+    	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/shw-customizations"
         credentials {
         	username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
             password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
@@ -75,7 +75,7 @@ publishing {
     publications {
         maven(MavenPublication) {
 			groupId = 'org.shw'
-			artifactId = 'adempiere-customizations.' + packageName
+			artifactId = 'shw-customizations.' + packageName
 			version = patchVersion
            	from components.java
            	pom {

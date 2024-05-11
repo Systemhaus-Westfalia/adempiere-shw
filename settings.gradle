@@ -8,7 +8,7 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
-rootProject.name = 'adempiere-customizations'
+rootProject.name = 'shw-customizations'
 
 include (':' + rootProject.name + '.base')
 project (':' + rootProject.name + '.base').projectDir = file('base')
