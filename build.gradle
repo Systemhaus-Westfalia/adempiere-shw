@@ -15,7 +15,7 @@ repositories {
 }
 
 ext {
-    libraryRepo  = "https://maven.pkg.github.com/erpya/adempiere_patch"
+    libraryRepo  = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-customizations"
     patchVersion = System.getenv("ADEMPIERE_LIBRARY_VERSION") ?: "local-1.0.0"
     baseVersion  = "3.9.4.001"
     baseGroupId  = "io.github.adempiere"

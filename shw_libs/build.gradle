@@ -1,0 +1,101 @@
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+    	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-customizations"
+        credentials {
+        	username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
+            password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
+		}
+	}
+}
+
+sourceCompatibility = 1.11
+def packageName = "shw_libs"
+
+dependencies {
+    api fileTree(
+        dir: 'lib',
+        include: [
+            '*.jar'
+        ]
+    )
+    
+	//	ADempiere Core
+	api project(':')
+	
+	//*********************************************************************//
+	//	Foreign ADempiere Library
+	//	
+	//	Custom Libs
+	// api "<library-group>:<library-name>:<library-version>"
+}
+
+
+sourceSets {
+    main {
+         java {
+            srcDirs = ['src/main/java/base/']
+         }
+    }
+}
+
+jar {
+	manifest {
+		attributes(
+			"Implementation-Title": "ADempiere Patch ${packageName}",
+			"Implementation-Version": patchVersion
+		)
+    }
+}
+
+publishing {
+    repositories {
+		mavenLocal()
+        maven {
+            url = libraryRepo
+            credentials {
+                username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
+                password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
+            }
+        }
+    }
+    publications {
+        maven(MavenPublication) {
+			groupId = 'org.shw'
+			artifactId = 'adempiere-customizations.' + packageName
+			version = patchVersion
+           	from components.java
+           	pom {
+                name = 'Adempiere Patch ${packageName}'
+                description = 'Project for Patches ${packageName}'
+                url = 'http://adempiere.io/'
+                licenses {
+                    license {
+                        name = 'GNU General Public License, version 2'
+                        url = 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'mariocalderon'
+                        name = 'Mario Calderon'
+                        email = 'mcalderon@westfalia-it.com'
+                    }
+                }
+            }
+		}
+	}
+}
