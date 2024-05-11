@@ -1,0 +1,139 @@
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+    	url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        credentials {
+        	username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
+            password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
+		}
+	}
+}
+
+ext {
+    libraryRepo  = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+    patchVersion = System.getenv("ADEMPIERE_LIBRARY_VERSION") ?: "local-1.0.0"
+    baseVersion  = "3.9.4.001"
+    baseGroupId  = "io.github.adempiere"
+    publishGroupId  = "io.github.adempiere"
+}
+
+sourceCompatibility = 1.11
+
+dependencies {
+    api fileTree(
+        dir: 'lib',
+        include: [
+            '*.jar'
+        ]
+    )
+   	//	Patches Libraries
+    api project(':adempiere-customizations.base')
+   	// api project(':adempiere-customizations.adempiere.test')
+   	// api project(':adempiere-customizations.asset')
+   	// api project(':adempiere-customizations.cashflow')
+   	// api project(':adempiere-customizations.crm')
+   	// api project(':adempiere-customizations.discord-notifier')
+   	// api project(':adempiere-customizations.distribution')
+   	// api project(':adempiere-customizations.extend')
+   	// api project(':adempiere-customizations.freight')
+   	// api project(':adempiere-customizations.human-resource-and-payroll')
+   	// api project(':adempiere-customizations.investment-and-loan')
+   	// api project(':adempiere-customizations.jasperreports')
+   	// api project(':adempiere-customizations.loan')
+   	// api project(':adempiere-customizations.manufacturing')
+   	// api project(':adempiere-customizations.migration')
+   	// api project(':adempiere-customizations.openid-authentication')
+   	// api project(':adempiere-customizations.point-of-sales')
+   	// api project(':adempiere-customizations.production')
+   	// api project(':adempiere-customizations.project')
+   	// api project(':adempiere-customizations.request')
+   	// api project(':adempiere-customizations.store')
+   	// api project(':adempiere-customizations.telegram-notifier')
+   	// api project(':adempiere-customizations.time-and-attendance')
+   	// api project(':adempiere-customizations.tools')
+   	// api project(':adempiere-customizations.wms')
+   	
+}
+
+jar {
+	manifest {
+		attributes(
+			"Implementation-Title": "ADempiere Patch",
+			"Implementation-Version": patchVersion
+		)
+    }
+}
+
+publishing {
+    repositories {
+		mavenLocal()
+
+        maven {
+            url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+            credentials {
+                username = findProperty("sonatypeUsername")
+                password = findProperty("sonatypePassword")
+            }
+        }
+    }
+    publications {
+        mavenJava(MavenPublication) {
+			groupId = publishGroupId
+			artifactId = 'adempiere-customizations'
+			version = patchVersion
+           	from components.java
+           	pom {
+                name = 'Adempiere Patches'
+                description = 'Project for Adempiere Patches'
+                url = 'http://adempiere.io/'
+                licenses {
+                    license {
+                        name = 'GNU General Public License, version 2'
+                        url = 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'yamelsenih'
+                        name = 'Yamel Senih'
+                        email = 'ysenih@erpya.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/adempiere/adempiere-payroll-multi-engine.git'
+                    developerConnection = 'scm:git:ssh://github.com/adempiere/adempiere-payroll-multi-engine.git'
+                    url = 'http://github.com/adempiere/adempiere-payroll-multi-engine'
+                }
+            }
+		}
+	}
+}
+
+task cleanBuildPublishLocal(type: GradleBuild) {
+	tasks = ['clean', 'build', 'publishToMavenLocal']
+}
+
+
+signing {
+	def isReleaseVersion = !version.toString().startsWith("local") && !version.toString().endsWith("-SNAPSHOT")
+
+	sign configurations.archives
+
+	setRequired {
+		// signing is required if this is a release version and the artifacts are to be published
+		// do not use hasTask() as this require realization of the tasks that maybe are not necessary
+		(isReleaseVersion || version.toString().equals("build")) && gradle.taskGraph.allTasks.any {
+			it.equals(PublishToMavenRepository)
+		}
+	}
+	def signingKey = findProperty("signingKey")
+    def signingPassword = findProperty("signingPassword")
+    useInMemoryPgpKeys(signingKey, signingPassword)
+    sign publishing.publications.mavenJava
+}
