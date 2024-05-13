@@ -20,6 +20,14 @@ repositories {
             password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
 		}
 	}
+    // ERP Repos
+    maven {
+    	url = "https://maven.pkg.github.com/erpya/Repository"
+        credentials {
+        	username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
+            password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
+		}
+    }
 }
 
 sourceCompatibility = 1.11
@@ -128,6 +136,7 @@ dependencies {
 	//	Temporary projects
 	//	Keycloak and Okta connector (Open-ID  based)
 	api "${baseGroupId}:adempiere-open-id-connector:1.0.0"
+	api "org.erpya.adempiere.tools:print-queue:1.1.7"
 }
 
 
