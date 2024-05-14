@@ -139,6 +139,7 @@ dependencies {
 	api "org.erpya.adempiere.tools:print-queue:1.1.7"
     //  SHW Libraries
     api "org.shw:lsv-general:1.0.0"
+    api "org.shw:electronic-invoicing-sv:1.0.0"
 }
 
 
