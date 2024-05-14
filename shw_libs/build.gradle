@@ -136,7 +136,7 @@ dependencies {
 	//	Temporary projects
 	//	Keycloak and Okta connector (Open-ID  based)
 	api "${baseGroupId}:adempiere-open-id-connector:1.0.0"
-	implementation "org.erpya.adempiere.tools:print-queue:1.1.7"
+	api "org.erpya.adempiere.tools:print-queue:1.1.7"
     //  SHW Libraries
     api "org.shw:lsv-general:1.0.0"
     api "org.shw:electronic-invoicing-sv:1.0.0"
