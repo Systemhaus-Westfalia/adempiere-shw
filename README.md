@@ -33,4 +33,4 @@ project (':' + rootProject.name + '.investment-and-loan').projectDir = file('inv
     api "<custom-group>:<custom-library>:<custom-version>"
 ```
 
-All added libraries will be part of complete lib named `org.shw.adempiere-shw.shw_libs`
+All added libraries will be part of complete lib named `com.shw.adempiere-shw.shw_libs`

@@ -148,7 +148,7 @@ publishing {
     }
     publications {
         maven(MavenPublication) {
-			groupId = 'org.shw'
+			groupId = 'com.shw'
 			artifactId = 'adempiere-shw.' + packageName
 			version = patchVersion
            	from components.java

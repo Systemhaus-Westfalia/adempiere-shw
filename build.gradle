@@ -19,7 +19,7 @@ ext {
     patchVersion = System.getenv("ADEMPIERE_LIBRARY_VERSION") ?: "local-1.0.1"
     baseVersion  = "3.9.4.001"
     baseGroupId  = "io.github.adempiere"
-    publishGroupId  = "org.shw"
+    publishGroupId  = "com.shw"
 }
 
 sourceCompatibility = 1.11
