@@ -6,7 +6,7 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven {
-    	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/shw-customizations"
+    	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-shw"
         credentials {
         	username = System.getenv("GITHUB_DEPLOY_USER") ?: System.properties['deploy.user']
             password = System.getenv("GITHUB_DEPLOY_TOKEN") ?: System.properties['deploy.token'] 
@@ -15,7 +15,7 @@ repositories {
 }
 
 ext {
-    libraryRepo  = "https://maven.pkg.github.com/Systemhaus-Westfalia/shw-customizations"
+    libraryRepo  = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-shw"
     patchVersion = System.getenv("ADEMPIERE_LIBRARY_VERSION") ?: "local-1.0.1"
     baseVersion  = "3.9.4.001"
     baseGroupId  = "io.github.adempiere"
@@ -32,31 +32,31 @@ dependencies {
         ]
     )
    	//	Patches Libraries
-    api project(':shw-customizations.base')
-   	// api project(':shw-customizations.adempiere.test')
-   	// api project(':shw-customizations.asset')
-   	// api project(':shw-customizations.cashflow')
-   	// api project(':shw-customizations.crm')
-   	// api project(':shw-customizations.discord-notifier')
-   	// api project(':shw-customizations.distribution')
-   	// api project(':shw-customizations.extend')
-   	// api project(':shw-customizations.freight')
-   	// api project(':shw-customizations.human-resource-and-payroll')
-   	// api project(':shw-customizations.investment-and-loan')
-   	// api project(':shw-customizations.jasperreports')
-   	// api project(':shw-customizations.loan')
-   	// api project(':shw-customizations.manufacturing')
-   	// api project(':shw-customizations.migration')
-   	// api project(':shw-customizations.openid-authentication')
-   	// api project(':shw-customizations.point-of-sales')
-   	// api project(':shw-customizations.production')
-   	// api project(':shw-customizations.project')
-   	// api project(':shw-customizations.request')
-   	// api project(':shw-customizations.store')
-   	// api project(':shw-customizations.telegram-notifier')
-   	// api project(':shw-customizations.time-and-attendance')
-   	// api project(':shw-customizations.tools')
-   	// api project(':shw-customizations.wms')
+    api project(':adempiere-shw.base')
+   	// api project(':adempiere-shw.adempiere.test')
+   	// api project(':adempiere-shw.asset')
+   	// api project(':adempiere-shw.cashflow')
+   	// api project(':adempiere-shw.crm')
+   	// api project(':adempiere-shw.discord-notifier')
+   	// api project(':adempiere-shw.distribution')
+   	// api project(':adempiere-shw.extend')
+   	// api project(':adempiere-shw.freight')
+   	// api project(':adempiere-shw.human-resource-and-payroll')
+   	// api project(':adempiere-shw.investment-and-loan')
+   	// api project(':adempiere-shw.jasperreports')
+   	// api project(':adempiere-shw.loan')
+   	// api project(':adempiere-shw.manufacturing')
+   	// api project(':adempiere-shw.migration')
+   	// api project(':adempiere-shw.openid-authentication')
+   	// api project(':adempiere-shw.point-of-sales')
+   	// api project(':adempiere-shw.production')
+   	// api project(':adempiere-shw.project')
+   	// api project(':adempiere-shw.request')
+   	// api project(':adempiere-shw.store')
+   	// api project(':adempiere-shw.telegram-notifier')
+   	// api project(':adempiere-shw.time-and-attendance')
+   	// api project(':adempiere-shw.tools')
+   	// api project(':adempiere-shw.wms')
    	
 }
 
@@ -84,7 +84,7 @@ publishing {
     publications {
         maven(MavenPublication) {
 			groupId = publishGroupId
-			artifactId = 'shw-customizations'
+			artifactId = 'adempiere-shw'
 			version = patchVersion
            	from components.java
            	pom {

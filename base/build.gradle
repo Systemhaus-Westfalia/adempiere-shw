@@ -149,7 +149,7 @@ publishing {
     publications {
         maven(MavenPublication) {
 			groupId = 'org.shw'
-			artifactId = 'shw-customizations.' + packageName
+			artifactId = 'adempiere-shw.' + packageName
 			version = patchVersion
            	from components.java
            	pom {

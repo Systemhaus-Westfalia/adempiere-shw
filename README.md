@@ -12,7 +12,7 @@ project (':' + rootProject.name + '.investment-and-loan').projectDir = file('inv
 ```
 
 - Add a subfolder named `investment-and-loan`
-- Add it `api project(':shw-customizations.investment-and-loan')` inside main `build.gradle` below of `api project(':shw-customizations.base')`
+- Add it `api project(':adempiere-shw.investment-and-loan')` inside main `build.gradle` below of `api project(':adempiere-shw.base')`
 - Inside folder add a gradle like the base gradle `base/build.gradle` (you can copy and paste it)
 - Change the variable value `def packageName = "base"` by `def packageName = "investment-and-loan"` this is the final package name
 - Add a folder `src/main/java`
@@ -33,4 +33,4 @@ project (':' + rootProject.name + '.investment-and-loan').projectDir = file('inv
     api "<custom-group>:<custom-library>:<custom-version>"
 ```
 
-All added libraries will be part of complete lib named `org.shw.shw-customizations.shw_libs`
+All added libraries will be part of complete lib named `org.shw.adempiere-shw.shw_libs`

@@ -1,13 +1,1542 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
-	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
-	<classpathentry kind="src" path="/shw-customizations">
+	<classpathentry kind="src" output="build/resources/test" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+			<attribute name="resource" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/test" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/resources/main" path="src/main/resources">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+			<attribute name="resource" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/main" path="src/main/java/base">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/test" path="build/generated/sources/annotationProcessor/java/test">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/main" path="build/generated/sources/annotationProcessor/java/main">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/8.6.2/c4c58571911464138b7ad8881a4319cb0d0ce504/lucene-analyzers-common-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/8.6.2/4c43e18556d699cce7c25951b906892347c06ffb/lucene-analyzers-common-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-core/1.11.827/d50d93fb9e4427af951e82ecbcc2c63d3f242d0b/aws-java-sdk-core-1.11.827.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-core/1.11.827/2973cb0b640f7e92435b32f22f5f38a94d29379b/aws-java-sdk-core-1.11.827-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-core/1.62.2/5808049a5e33eba6f248a68d58e75399a68f2784/grpc-core-1.62.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-core/1.62.2/9d3c2a0521bf2d1be5f76e9169fec618f870da23/grpc-core-1.62.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-business-processors/1.1.0/3bad4f9c2c856aa1a96d575d3c1ecc5ddff2861a/adempiere-business-processors-1.1.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-business-processors/1.1.0/e921ec8c9aadb7b69c5631d2c637574db90f915d/adempiere-business-processors-1.1.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.perfmark/perfmark-api/0.26.0/ef65452adaf20bf7d12ef55913aba24037b82738/perfmark-api-0.26.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.perfmark/perfmark-api/0.26.0/7009fcae4696dc0088d9e3d21933380f845e05be/perfmark-api-0.26.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/d83744bae211a4072c39f007000a13f501a88395/jakarta.xml.bind-api-2.3.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.15/259957c76d345cb3db5411f57a0654300aaca04c/byte-buddy-1.10.15.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.15/8d60df068a9009ffcde1cc39dea27878cb79819f/byte-buddy-1.10.15-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/store/3.9.4.001/e519e8fde832aa0b659935c222a6fe12c7d57ed6/store-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/store/3.9.4.001/2d6198ad33a12ffd3c024e136f8950ae59731cea/store-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/bouncycastle/bcprov-jdk14/138/de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff/bcprov-jdk14-138.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.13.2/7bad5fd16d289d746e375c3ae9bdf88357d4aa8/jackson-jaxrs-json-provider-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.13.2/72f99476929c8a63b537607dd441d58b8e71b51/jackson-jaxrs-json-provider-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.7.1/c4d931ef8ad2c9c35d65b231a33e61428472d0da/lz4-java-1.7.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.7.1/1a37e596d5e62bd94000c6f0b5e3989f3b8d6a67/lz4-java-1.7.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.10/ea29e063d2bbe695be13e9d044dcfb0c7add398e/kotlin-stdlib-1.4.10.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.10/4a5e4f984e6c3e380f100857f04aba4f3e5fbda8/kotlin-stdlib-1.4.10-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/software.amazon.ion/ion-java/1.0.2/ee9dacea7726e495f8352b81c12c23834ffbc564/ion-java-1.0.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/software.amazon.ion/ion-java/1.0.2/3077203a7e79dd126a480da0491ec60238bbb872/ion-java-1.0.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/jna/5.5.0/ade077cbb2618a18bfc6c335413b2b7163d97601/jna-5.5.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/jna/5.5.0/4555547b3bfc9d827f5310888726d62944c4f756/jna-5.5.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.6/1dcb770bce80a490dff49729b99c7a60e9ecb122/jakarta.ws.rs-api-2.1.6.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.6/6c66d1fc6dfd1de469e831d2cab362ce07b2561d/jakarta.ws.rs-api-2.1.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/8.6.2/75412c308ff3d9f2bf45248538b9806ce624cc3d/lucene-memory-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/8.6.2/3be87e1ab2d0c23d0840cfa26d8a8da4d009aa4d/lucene-memory-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.3.3/6f639af368afda4c5a3e77a6299262c501e67076/postgresql-42.3.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.3.3/cdb7e97473563d1333fa1267ef249b3ccf237457/postgresql-42.3.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.activemq.protobuf/activemq-protobuf/1.1/26682eb801f70563511f7c424dc10e8b3e66340e/activemq-protobuf-1.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.activemq.protobuf/activemq-protobuf/1.1/1a999c15504cdf0911f7fb333fdb1db6876020a0/activemq-protobuf-1.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/rank-eval-client/7.9.1/3a150644b1aa5c7c2d75a15763c0a333fd1f335f/rank-eval-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/rank-eval-client/7.9.1/753e6139da0b6196dd780c639023aa11b2a28920/rank-eval-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.1/48f12deaae83a8dfc3775d830c9fd60ea59bbbca/objenesis-3.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.1/36e4b278b98654980a51e36ef60b186a757ed3d7/objenesis-3.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/982a90132e942f302e6fe79d6e78c4bc2e998569/gson-2.10.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/8.6.2/3719b09652d0c9de87de529060d9c2ce527f929c/lucene-backward-codecs-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/8.6.2/9f4ea9595827eae5be845ded28c2a94835d23dfc/lucene-backward-codecs-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/bouncycastle/bcmail-jdk14/138/14ff2dfec8578f5f6838c4d6a77a86789afe5382/bcmail-jdk14-138.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-x-content/7.9.1/1d683e9923b8b248074769e7bb3936e6b598822f/elasticsearch-x-content-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-x-content/7.9.1/3ad5230b3a514c3c690006ce5128308748119add/elasticsearch-x-content-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-websocket-client/2.14/1b66d37914b232cef45e56ec8c01907620de9e3a/nv-websocket-client-2.14.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-websocket-client/2.14/fb737eab484fa4627334e64f33fede3301035f85/nv-websocket-client-2.14-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/lang-mustache-client/7.9.1/5bbf9f4f4164281aae18a2fdf420c9039c73bbf/lang-mustache-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/lang-mustache-client/7.9.1/12bb17fc84998dc93f60a9e58c22b8178eec08c6/lang-mustache-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.15/7f0cc687ee3177fd451d17b9b80325a8cdd1c7ff/byte-buddy-agent-1.10.15.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.15/3f552c080aab2cd7d2a6a4bdad890b74207a7bad/byte-buddy-agent-1.10.15-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/time-and-attendance/3.9.4.001/db8351ea9067a3c2188c83439e515957d7e0e089/time-and-attendance-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/time-and-attendance/3.9.4.001/d36e311a61f9514feb13d27c8037bcdb4e227345/time-and-attendance-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-core/5.7.0/1e07c5849fbb28bac3bf2528a801758fc58db6af/activemq-core-5.7.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-core/5.7.0/5cefbc06d13b129fa8265bbe86fdfd3a2b8e284/activemq-core-5.7.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/io/7.1.13/fc561dc9ffd18f9fb0f06557718e054e7f59f69c/io-7.1.13.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/io/7.1.13/14cc18b4d2ea629d52445e8264b5abd1565ebe5d/io-7.1.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/itextpdf/5.5.13.3/5282897d446c3b736d63ef6e83043eb6f1943b4e/itextpdf-5.5.13.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/itextpdf/5.5.13.3/9c8e9c7372b225fe7a191dc5aa26f5e91f3d561c/itextpdf-5.5.13.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.24.3/8e0f08a59c21e3f17121667489a005a8df091af0/protobuf-java-3.24.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.24.3/aada4fdc16275d82c1186b52495462ba9caa17f4/protobuf-java-3.24.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.spullara.mustache.java/compiler/0.9.6/1b8707299c34406ed0ba40bbf8513352ac4765c9/compiler-0.9.6.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.spullara.mustache.java/compiler/0.9.6/a23ce3f24ae450f13f52aaa336bf836759f22331/compiler-0.9.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.13.2/e2f198c512f0f0ccbd6d618baecc9dde9975eadf/jackson-module-jaxb-annotations-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.13.2/abdbc37fc439fcc012bc2b6ec38bd095174f16d0/jackson-module-jaxb-annotations-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/8f3421a8203053a6ab4b74f76a0550d21eee8cfe/paranamer-2.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.13.2/e82cea98763d0d34e0fb35851721d6a757400dfb/jackson-module-scala_2.13-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.13.2/649781494c2324f7992c7304a0acf0a83a989a42/jackson-module-scala_2.13-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/telegram-notifier/3.9.4.001/54f88b9d284438eba1a0dd97b8c32852aac45154/telegram-notifier-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/telegram-notifier/3.9.4.001/c2e62300b29075d4cbdbd00d289fb5f515f08ee2/telegram-notifier-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/lang-tag/1.6/ba96ae591bf885f130a772794f07209e2bdb9fb5/lang-tag-1.6.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/lang-tag/1.6/e2ff04c56eb29cc98f8c67b390c07a30dd353bff/lang-tag-1.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/club.minnced/opus-java-api/1.1.1/63c6910fb1f7eebbfd922a01d37a4b94fa0ee5e3/opus-java-api-1.1.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/club.minnced/opus-java-api/1.1.1/a30f45f1f470ea57de4e027f7baa6a5554fdcbc6/opus-java-api-1.1.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-netty-shaded/1.62.2/a714ecbed7be23639d861015125b6b921481bc97/grpc-netty-shaded-1.62.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-netty-shaded/1.62.2/deed411ef596a386d7ae9fbeae90bdbc18c1fdeb/grpc-netty-shaded-1.62.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.17/ae92292a2043888b40d418da97dc0b669fde326/poi-3.17.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.17/9d185f2c484774285585e76f5f1d887208482f93/poi-3.17-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.2/54ebea0a5b653d3c680131e73fe807bb8f78c4ed/commons-collections4-4.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.2/e8dd003d43b1f7dba173fb7e63f5c0b823f5e5c6/commons-collections4-4.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-framework/2.4.4/85ff29df39616972a074737948f116ef25addfee/grizzly-framework-2.4.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-framework/2.4.4/1eeb6761586a7038132403d8e614518015aa1170/grizzly-framework-2.4.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-kms/1.11.827/39d4c74a76f661c5c63c62aff41f9b65273a7aae/aws-java-sdk-kms-1.11.827.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-kms/1.11.827/e4e93f217905fe29809f724b26d773e0735ce064/aws-java-sdk-kms-1.11.827-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.10.5/e84c8cf7b0cbac5ef101cf56ff8d439fa77e36c2/ant-launcher-1.10.5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.10.5/24f352f6f2e37deb23802cab6a1dd857fb77625c/ant-launcher-1.10.5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.0.7.RELEASE/2c90825834a037aab6f6a71bbd05d81680832c49/spring-core-3.0.7.RELEASE.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.0.7.RELEASE/ed3b044e7107205ab134a539e922510ec72c4636/spring-core-3.0.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/investment-and-loan/3.9.4.001/80b298298811d06970e12d9690e004536ed9d30f/investment-and-loan-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/investment-and-loan/3.9.4.001/11d4734e34d802b95bdf405db04f57458639e01a/investment-and-loan-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/club.minnced/opus-java-natives/1.1.1/183af66d80cd508bbf45343f30ee280e0750f416/opus-java-natives-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/migration/3.9.4.001/637107a2a4de524cb6727d345c4bdc586cf1272/migration-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/migration/3.9.4.001/5a9d576947eb747ec173cdadbd0c96ccc0fe4104/migration-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots-meta/6.0.1/d6bd22e9c58465e8a34699e32770b415abc2d290/telegrambots-meta-6.0.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots-meta/6.0.1/b8c74833ca00e04edf98fd8b764023c0f728d190/telegrambots-meta-6.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.2/a6a0e0620d51833feffc67bccb51937b2345763/jackson-core-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.2/f18990d027317810bb1a131a32ce4f001c8eaf2f/jackson-core-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/cashflow/3.9.4.001/4418c1468724cc03acd8e832281d3c12a156549c/cashflow-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/cashflow/3.9.4.001/6d123a5cfa488260811187ce674ed513250c5be8/cashflow-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.64/1467dac1b787b5ad2a18201c0c281df69882259e/bcprov-jdk15on-1.64.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.64/2881bfaf2c15e9e64b62c2a143db90db7a0d6035/bcprov-jdk15on-1.64-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/8.6.2/1072a1d3b3c6ffa40116a88c267bfa8523ccc166/lucene-misc-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/8.6.2/e9c7c55da245c2937de12687bfbd7942ce805343/lucene-misc-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.6.1/396513aa96c1d5a10aa4f75c4dcbf259a698d62d/hk2-utils-2.6.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.6.1/91a2264ed6d909c44763fc807d22a19da87b84c9/hk2-utils-2.6.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.50.Final/cbcb646c9380c6cdc3f56603ae6418a11418ce0f/netty-codec-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.50.Final/5b2208ee9cae7975dee8fe1dacf1b5a65ee7b1a8/netty-codec-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.50.Final/deb87b3c901142d73279a58e16867cf6f2b1c2e5/netty-resolver-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.50.Final/8b0df581b234b0bd784da20aad258518f30952a3/netty-resolver-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.lowagie/itext/2.1.7/892bfb3e97074a61123b3b2d7caa2db112750864/itext-2.1.7.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.lowagie/itext/2.1.7/c4a56ee84b87e8737e6b7769fcfeb97019003a14/itext-2.1.7-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/distribution/3.9.4.001/8f21825475f9740206a601c95c73f297c7e46f41/distribution-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/distribution/3.9.4.001/32fe84e21fc735d93ce1bd164433f1454ba796e9/distribution-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-console-standalone/1.7.0/a53fd25be9049188aa2064fddd30d90bd8c09d1e/junit-platform-console-standalone-1.7.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-console-standalone/1.7.0/3c791495768512669e0463f7be775c1ee4ea10c3/junit-platform-console-standalone-1.7.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.client/elasticsearch-rest-client/7.9.1/bb5b418e61cb905497e3558f338106a32d536b63/elasticsearch-rest-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.client/elasticsearch-rest-client/7.9.1/f959ed5e7f1e5acf17f17730ee32279632eb74ea/elasticsearch-rest-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.2.2/ffeb635597d093509f33e1e94274d14be610f933/jackson-databind-2.13.2.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.2.2/8268a225143ededca45ca24d0761f08ea398fd5b/jackson-databind-2.13.2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.5/8dee4d8c5374920f2db2f5f55d9dd6ecd4194cc/scala-reflect-2.13.5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.5/2b07e5bab919a75b8408e5c56905ee38d5e270e3/scala-reflect-2.13.5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-core/7.9.1/cf03f48b178b100a43b0e33bb801a1e875d392ac/elasticsearch-core-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-core/7.9.1/f05c7564269da481c4abfe76c9b6d937ad9a88b2/elasticsearch-core-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.4/62ebe7544cb7164d87e0637a2a6a2bdc981395e8/commons-collections4-4.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.4/6260e416ff273ee938b31b0a8e512a367b1ee500/commons-collections4-4.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.3/927549528edba4c97883df90de8145fa228a5d8f/mysql-connector-java-5.1.3.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.konik/harness/1.0.0/5aed88309c746214ccbd75611421257525f72c9b/harness-1.0.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.konik/harness/1.0.0/ff9cf9e30387970fc21a69a332b79333bf1b28b/harness-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/c85270e307e7b822f1086b93689124b89768e273/j2objc-annotations-2.8.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/74fb66e276fc42784d884d51f841e35232bc90de/j2objc-annotations-2.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/aggs-matrix-stats-client/7.9.1/b3c7230d1badbcab4691388be7d193469fac9c0d/aggs-matrix-stats-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/aggs-matrix-stats-client/7.9.1/5e3d8bd9c394ca2095e07915aa2bc5b20d2ad9a0/aggs-matrix-stats-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/9654e91a61d7662c36be6710ef8e720c0e3f9807/httpclient-4.5.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jfree/jcommon/1.0.16/376f19a7c317509a57dfc684cdfd4081db7c082c/jcommon-1.0.16.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/jfree/jcommon/1.0.16/4e9db93cbb47f8a7ed7da1ce9d50dacd561d2616/jcommon-1.0.16-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.30/8fde7fe2586328ac3c68db92045e1c8759125000/snakeyaml-1.30.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.30/2fa17b2e1e6edc10ce8dec15df18a844efd8318b/snakeyaml-1.30-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.0.7.RELEASE/5915c3eee8dc193b19b648719d653439c57fc0d8/spring-beans-3.0.7.RELEASE.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.0.7.RELEASE/aa62a32a51e13a2ddf54f7a705a9921d8fcd7d09/spring-beans-3.0.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jfree/jfreechart/1.0.19/ba9ee7dbb2e4c57a6901c79f614ed2dea9cc0e20/jfreechart-1.0.19.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jfree/jfreechart/1.0.19/5aae69aa497ce4ea82b59317102a09c5abc91ba1/jfreechart-1.0.19-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/human-resource-and-payroll/3.9.4.001/b2ed81d577111fb3afe35e84138c0707082e9378/human-resource-and-payroll-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/human-resource-and-payroll/3.9.4.001/a27b6a135653cfab798a502d7f7da933b371a9cf/human-resource-and-payroll-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.xmlbeans/xmlbeans/2.6.0/29e80d2dd51f9dcdef8f9ffaee0d4dc1c9bbfc87/xmlbeans-2.6.0.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.33.0/de2b60b62da487644fc11f734e73c8b0b431238f/checker-qual-3.33.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.33.0/ee4ecf6c55e3f2b05b839aa05c70f1298437ebe9/checker-qual-3.33.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.beanshell/bsh/2.0b5/fdc2ab6ae8b53e0d4761b296c116df747cd85199/bsh-2.0b5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.beanshell/bsh/2.0b5/99337ee4d907acc995c6f853e177097e5a6f06a/bsh-2.0b5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/kernel/7.1.13/2e3be92994d11546706948474442b9ebf18d7723/kernel-7.1.13.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/kernel/7.1.13/f4262d4418fb88e345101dc02eab84564ca66bf9/kernel-7.1.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.8.1/ffc7ba8f289428b9508ab484b8001dea944ae603/hppc-0.8.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.8.1/b338e50c3f98c7ec2bf67a5efb7fa8726a4a9b2d/hppc-0.8.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/jasperreports/3.9.4.001/d3502e2ce57740a60a34b3b2952d32329c5b2662/jasperreports-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/jasperreports/3.9.4.001/93895a7be7862961e9b45705888fafd1dba3e90f/jasperreports-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.3.0/c992f4285e6d3a9375a8c41788db4bef5649c777/scala-collection-compat_2.13-2.3.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.3.0/cde98752ae191028e00d73d54cd44d10bc12930c/scala-collection-compat_2.13-2.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.castor/castor-xml/1.4.1/2cee800a008291305ac4f3a67b674f9c6cb1d07a/castor-xml-1.4.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.castor/castor-xml/1.4.1/9e56ee09bf0e081a930fb96e875533d7a2e4870f/castor-xml-1.4.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.9-1/7dc25611870925d32752c5b45d7d23ae01702f43/zstd-jni-1.4.9-1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.9-1/befcbcaedd0fa804df797ed2caa797c9dcb16421/zstd-jni-1.4.9-1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/project/3.9.4.001/4189c4a535957eb5e8c5244bcc6b63cffe9ff026/project-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/project/3.9.4.001/727c809da724ed9c9fba830f21e03c2c574c929a/project-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/javaee/javaee-api/5/e3cc17b10ab552219edbe33915e62937e387d0ef/javaee-api-5.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.lookfirst/sardine/5.9/d3488c704da8440942539e62295f35f9cd1f670a/sardine-5.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.lookfirst/sardine/5.9/7419bd7a90b8b77f79ed6acce711779bb6bea214/sardine-5.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.activemq/kahadb/5.7.0/c45eff4b78ca1f5f7469e4f4e094dbd4c8038adf/kahadb-5.7.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.activemq/kahadb/5.7.0/5f588e9c10a3253a2e70a106e66fd99012a6e5a1/kahadb-5.7.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.6.0/c06e9d5514c82f27707693a4195182415874f0d4/mockito-junit-jupiter-3.6.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.6.0/8115f39cae68b976c432b317abb93609a90004f3/mockito-junit-jupiter-3.6.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.13.2/5601496b5b6e43d947aeeffbffadb2b18961c731/jackson-dataformat-yaml-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.13.2/aec6a771d4e2d77f9724267037b21463cb5d24ea/jackson-dataformat-yaml-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/2.8.0/35a3476cd1b9c54f3fa7b6e3cb57efa20fb4bb9b/kafka-metadata-2.8.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/2.8.0/4e42e7fe557a434c26c34af2d2a67099437ed67a/kafka-metadata-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.15/423a17aeb2f64bc6f76e8e44265a548bec80fd42/groovy-all-2.4.15.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.15/ae189e50a0cc42945c556ab4c7f0f19c6e0faa7c/groovy-all-2.4.15-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.50.Final/2e4f6b655933faca0deef8d234ac6725b598109a/netty-transport-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.50.Final/40c12cf806a017415b8905c842aa4622929487c5/netty-transport-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.jasperreports/jasperreports/6.17.0/6e1ffe3b46a1cf69731f66b775ac267fa8d1d4a8/jasperreports-6.17.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.jasperreports/jasperreports/6.17.0/eb84b26acd7012d186b50237626b293554a2024a/jasperreports-6.17.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.stephenc.jcip/jcip-annotations/1.0-1/ef31541dd28ae2cefdd17c7ebf352d93e9058c63/jcip-annotations-1.0-1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.stephenc.jcip/jcip-annotations/1.0-1/2064ac5ff426f3c02656aedc317952b82463782f/jcip-annotations-1.0-1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/tools/3.9.4.001/23917077c5da2f84d4fd86bb502dcbc3dbdcf821/tools-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/tools/3.9.4.001/613a5d7e17b8f914a5e2ee7d62916bed3c993724/tools-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.hawtdispatch/hawtdispatch-transport/1.11/f930133932548bba115b00a2a166613c15fe0ba7/hawtdispatch-transport-1.11.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.hawtdispatch/hawtdispatch-transport/1.11/ac1ea64758a334fe0052a5ab99a18fca91be1c96/hawtdispatch-transport-1.11-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/47032dcf2f69880f07dab3dc60b4b0ad97318308/json-20211205.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/da7389375f5fe45eda82bc552e77513057811748/json-20211205-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots/6.0.1/5e236e2449037dca1a67888d56fe76298106dbe5/telegrambots-6.0.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots/6.0.1/331c52136afb463069946068117020a82e301c1f/telegrambots-6.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.client/elasticsearch-rest-high-level-client/7.9.1/14530647714dbb5e98174422da20abed5aacc48c/elasticsearch-rest-high-level-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.client/elasticsearch-rest-high-level-client/7.9.1/e744cca3a1edae97e0509e248e05030521ecdd31/elasticsearch-rest-high-level-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.konik/itext-carriage/0.8.0/e6af5603fefed3b946cb1f8aa9deeb2341a450ec/itext-carriage-0.8.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.konik/itext-carriage/0.8.0/3d1bf9fb1be6336d1ca7e7c6f27ab0beafe38c5e/itext-carriage-0.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.34/15bb093c57c0cac880ad7b474f7fd653cac840a1/jersey-hk2-2.34.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.34/c53ad4d5455bdd3103ad2b3d1b25c627a217cd34/jersey-hk2-2.34-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/8.6.2/275ce757580877efb9370452c282a1de4d10fd3e/lucene-highlighter-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/8.6.2/a380a2766520683aff1caf55d54b396635c07e9a/lucene-highlighter-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.2/ec18851f1976d5b810ae1a5fcc32520d2d38f77a/jackson-annotations-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.2/527158378d8c2e72c3e79122be86c896ad01129a/jackson-annotations-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/8.6.2/1ffe015e1f765ec0e8aaccd3b82d7578584aebbf/lucene-suggest-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/8.6.2/d8d3768964dfec2bcdc09ac70c5dbe9da2316b46/lucene-suggest-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.4/8c10bb8815109067ce3c91a8e547b5a52e8a1c1a/joda-time-2.10.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.4/4001d385e8be893bc4b82cd0091f79a9ac5976dc/joda-time-2.10.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.9/e4631ce165eb400edecfa32e03d3f1be53dee754/HdrHistogram-2.1.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.9/966a6429061192e62cc346462587253a726db6b7/HdrHistogram-2.1.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.0.7.RELEASE/e0072743c5c485e0b36a8fce109dcd5c08c5323f/spring-context-3.0.7.RELEASE.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.0.7.RELEASE/dbfc275d26fe2ce29767ccbaa1b2245df7fa325d/spring-context-3.0.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.50.Final/dc0110fc4d22fb22f1038cd73a6f8a034928a2d7/netty-handler-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.50.Final/ef356e2d9fa060a16945e88641e8ae5f52153c49/netty-handler-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.2/6986314976f55419819ca7ae9f9d077ba070fe42/scala-logging_2.13-3.9.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.2/3c9141a20ea95952f1d5254e0fa8bc4e62c9c1b8/scala-logging_2.13-3.9.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/crm/3.9.4.001/6651f44def7d94858961526061623ada5ccfb432/crm-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/crm/3.9.4.001/8f234973796ec07a3c9d724920171463d83a9b87/crm-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.5.9/9f14e67a10bfe1ff02347c02116ab4ca03febb6f/zookeeper-jute-3.5.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.5.9/232080b33fd9971637584263f6da30d52ca51c3a/zookeeper-jute-3.5.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.8/7c62f5f72ab05eb54d40e2abf0360a2fe9ea477f/json-smart-2.4.8.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.8/399ee58414b3686be3d4f3b59f6bc11d30d2309e/json-smart-2.4.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/base/3.9.4.001/9db5f4d60e8caf6737ca0b7b5044286cb3392468/base-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/base/3.9.4.001/75696e1f4c09bae7ef8fc94bf4a55b51f9ed59ad/base-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/discord-notifier/3.9.4.001/be318ea8bedb52bbec330d36bf9bedb8b9b9f238/discord-notifier-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/discord-notifier/3.9.4.001/d5f6fb174b6b9ca7fcf8a1f24ef57d64899e5611/discord-notifier-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.4/d52b9abcd97f38c81342bb7e7ae1eee9b73cba51/commons-beanutils-1.9.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.4/f00e0ba867d1810f255876631ab440e0725a9af0/commons-beanutils-1.9.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jasypt/jasypt/1.9.0/857a1a55a81641c31b2a9b4b292120c1d4432bd/jasypt-1.9.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jasypt/jasypt/1.9.0/7345fb69a07951acddfd3e0a0989aac52f9f655/jasypt-1.9.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/ons/11.2.0.4/3516a84f4e26caab41d560678bb59076666543f7/ons-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/ons/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/ons-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/freight/3.9.4.001/67f001b3c314eda2f3b9d47dbd80976feec0ed30/freight-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/freight/3.9.4.001/c53ccb0801e3f2d524dd43be684c5ec5a945e205/freight-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.6.1/9dedf9d2022e38ec0743ed44c1ac94ad6149acdd/hk2-locator-2.6.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.6.1/73883e1a0effc4d1409743b515030a634f7b45c3/hk2-locator-2.6.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.37.0/ba74746d38026581c12166e164bb3c15e90cc4ea/checker-qual-3.37.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.37.0/9990309889a76e4c6556c18140ce8559b854bae3/checker-qual-3.37.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/oauth2-oidc-sdk/9.35/7bfdf91bc4ae265f6c49a367bc0ed0e47d0e3a97/oauth2-oidc-sdk-9.35.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/oauth2-oidc-sdk/9.35/96299a0fa6784eb903bc27be0bbd1ce029eaf809/oauth2-oidc-sdk-9.35-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.hawtdispatch/hawtdispatch/1.11/1fefb873b3046944dd8af2fb2be6dab4ef76057/hawtdispatch-1.11.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.hawtdispatch/hawtdispatch/1.11/276b4680c71fe9447dae2fc69c58faccd68089f/hawtdispatch-1.11-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-cli/7.9.1/7085b7120871986d6f19e65ea73c07f8e3e98713/elasticsearch-cli-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-cli/7.9.1/88b60f2f223399f309199d306c623c4571880ea4/elasticsearch-cli-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.6.1/b2eb0a83bcbb44cc5d25f8b18f23be116313a638/aopalliance-repackaged-2.6.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.6.1/8225e1c5c5615a447227ed9164e709be1e77802d/aopalliance-repackaged-2.6.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-grizzly2-http/2.32/9b43242b517363eeefed378fb8cbc84c95db336e/jersey-container-grizzly2-http-2.32.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-grizzly2-http/2.32/ec3d30ebcf984a4125a571409d44ac1a99d8887c/jersey-container-grizzly2-http-2.32-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.34/cea85e85b1c19657ec3ea41b26351a53a40caa3c/jersey-common-2.34.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.34/cce50217e29e1c89345d82c275548714fc8b8d4/jersey-common-2.34-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt-impl/0.11.2/8fd8acf9d3cb9a2db05bfa484c2a1408cc3507f9/jjwt-impl-0.11.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt-impl/0.11.2/497f661dfd650f8eba5cfe4eb05bdd165d2a6e08/jjwt-impl-0.11.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jfree/jfreechart/1.0.13/b5fbdc552c4caec3dac4b4dcbc10d119a194946e/jfreechart-1.0.13.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.virtuald/curvesapi/1.04/3386abf821719bc89c7685f9eaafaf4a842f0199/curvesapi-1.04.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.virtuald/curvesapi/1.04/5c01708d122c6a61e90716e931b58226d8261312/curvesapi-1.04-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.13/efc110bad4a0d45cda7858e6beee1d8a8313da5a/httpmime-4.5.13.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.13/f4f989a08a1ec3c84ad0aa110cb55590ccf2525/httpmime-4.5.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/request/3.9.4.001/b1b0070c578e8238e3d0ee3c21c24d7212b5920b/request-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/request/3.9.4.001/40a0880346dcfa5ad394c2b07087b92585113e32/request-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-dashboard-improvements/1.0.8/9a8d5d1c20ad76cf9d678aee8f2b646c240143c8/adempiere-dashboard-improvements-1.0.8.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-dashboard-improvements/1.0.8/e7fb77194f4aa1b9838e59bb43cd823c036ee3ed/adempiere-dashboard-improvements-1.0.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server/2.4.4/f9a62c711eb51f351cc5ba48faf44d5a49faa0a7/grizzly-http-server-2.4.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server/2.4.4/289ed9b73dbc3bb09a3a18ce5a9c99e340676d71/grizzly-http-server-2.4.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/mapper-extras-client/7.9.1/5e165462c49dce96b98dd70fd0e7707011e1aa1d/mapper-extras-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/mapper-extras-client/7.9.1/55b51137649ce450500bb302219ba56d7fa977e7/mapper-extras-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/itext-pdfa/5.5.2/b8baea0a17e9e07cf4c4435f61d983a79caaf54d/itext-pdfa-5.5.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/itext-pdfa/5.5.2/3caf5acdaa578963e09f15a665f8818bb77d9070/itext-pdfa-5.5.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/manufacturing/3.9.4.001/1306d653bcc8660a33395cc5a60a97396a798802/manufacturing-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/manufacturing/3.9.4.001/e611a5f8dc4ade61d745983246f9ff9e29d73273/manufacturing-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk14/1.38/de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff/bcprov-jdk14-1.38.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk14/1.38/f256abfe9445a97cfab36c9c6ef1414b81a60093/bcprov-jdk14-1.38-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/club.minnced/opus-java/1.1.1/6656bf7d92e3bc058beb8f0f8a14fe9bc02da4b8/opus-java-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.827/d43eb82777fd7bce6cdf502385413c09f70ad80a/aws-java-sdk-s3-1.11.827.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.827/2a7590bc844226afd860d479d05da121db6c3812/aws-java-sdk-s3-1.11.827-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/3.17/7d8c44407178b73246462842bf1e206e99c8e0a/poi-ooxml-3.17.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/3.17/c9967472b96ef92372352958dcfd3e8e0e5bd2d0/poi-ooxml-3.17-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.23/3c0daebd5f0e1ce72cc50c818321ac957aeb5d70/animal-sniffer-annotations-1.23.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.23/d4026d5c3c5566247873b7f62ce8e487ddfc856/animal-sniffer-annotations-1.23-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.6.1/8096ebf722902e75fbd4f532a751e514f02e1eb7/jakarta.inject-2.6.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.6.1/74132e0252fda12812a851695e488d3a862e09de/jakarta.inject-2.6.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.21.0/d06974eec06892e5594bdb8fbbc95cd81f1c57b2/ecj-3.21.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.21.0/a143919dc9978bdf5977f04b19bc50cee00aa862/ecj-3.21.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt-jackson/0.11.2/bff0b63d4cbace7b38551a70350875e69201ffeb/jjwt-jackson-0.11.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt-jackson/0.11.2/641ebae9875999b1c3160ae6522a5e4867d2f4d3/jjwt-jackson-0.11.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/dc5e5b48261b5eb12c2804561a98f1fbc287bc07/argparse4j-0.7.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-util/1.62.2/98c4138f09fb57c3ad6cbeffb31ed73e302038f7/grpc-util-1.62.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-util/1.62.2/d012f307837c801952a9e54d8ac5e698ea5ebfcf/grpc-util-1.62.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-i18n/1.22/ff7e7649e00acb5dd97bd9cc44bd58c78662cfdb/nv-i18n-1.22.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-i18n/1.22/8365c6639cbdfd290ab7e355ee6062d1a87f37c/nv-i18n-1.22-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.8.0/a4f66ca79617470d1355b809675313619bbae45a/kafka-clients-2.8.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.8.0/733350b33475541dc8fb4a02bfa844e62651094a/kafka-clients-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/ca5088d615accaabd2aa956b10b236a4e75cfccb/annotations-23.0.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpasyncclient/4.1.4/f3a3240681faae3fa46b573a4c7e50cec9db0d86/httpasyncclient-4.1.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpasyncclient/4.1.4/1e5c5d894e85baa50550e9cb8d8ddc112fbea178/httpasyncclient-4.1.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.android/annotations/4.1.1.4/a1678ba907bf92691d879fef34e1a187038f9259/annotations-4.1.1.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.android/annotations/4.1.1.4/deb22daeb37bdcbc14230aeaeddce38320d6d0f9/annotations-4.1.1.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.32/ea5a2a773f4a5274efb1fbc5807de57dc09668ac/jersey-entity-filtering-2.32.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.32/4231f03061e8eb1569e6336f428612f2d500ba6f/jersey-entity-filtering-2.32-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.1/73a8001e7a54a255eef0f03521ec1805dc738ca0/commons-digester-2.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.1/32d198e5ebef012249b225118c7cb9caae56c4d8/commons-digester-2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.13.2/984bb22f310ebbedc967d206e672f8acf766a98e/jackson-dataformat-smile-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.13.2/3d74b1ac5b4c5342ac276c779ad4205e2bc053f2/jackson-dataformat-smile-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.2.1/919754c0de3c2f22187e07318da1766f7583b5f7/jackson-databind-2.13.2.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.2.1/85fba031d38fa1cfbccfad898befa3870d24ef64/jackson-databind-2.13.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/8.6.2/d6fd5936f99ab50622e75ba6dacff97090cb62e1/lucene-grouping-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/8.6.2/243418fded62c6033b5756cfc30e3576c1c4311f/lucene-grouping-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-grpc-utils/1.3.6/e29b79074a1db965a1e10878a7b318adee7902fb/adempiere-grpc-utils-1.3.6.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-grpc-utils/1.3.6/a5f010d10e18ff5ed2a3e1f706d6aef9c02feaa1/adempiere-grpc-utils-1.3.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/1ad35f11d17abb52426bfe15ea7b4c583795012/jakarta.annotation-api-1.3.5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.jjYBdx4IL/ecs/1.4.2.1/d6fc8991c4faf52ee9bd3bad2536e8dc124e0fc8/ecs-1.4.2.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.jjYBdx4IL/ecs/1.4.2.1/a13f9bf3a0ebc745c046619a73b8b44bfee0c0c3/ecs-1.4.2.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.0/b25f3815c4c1860a73041e733a14a0379d00c4d5/junit-jupiter-api-5.7.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.0/388560dc9aa3c479df4e3effce036646c8b89719/junit-jupiter-api-5.7.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/3.0.4/fa28784fc03bbe87cb97394373760f6c707f3e9/mariadb-java-client-3.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/3.0.4/b799b41ece18b8502f1780a4a611bc104a06aee/mariadb-java-client-3.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/nimbus-jose-jwt/9.22/bed63628cd31d8641c5a1b29609a965179ef91ec/nimbus-jose-jwt-9.22.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/nimbus-jose-jwt/9.22/c4a88c643e95acf790d79abb5bac38bf0f833569/nimbus-jose-jwt-9.22-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/c45b5962230be8a5f93759203870c98917bb8b31/jakarta.activation-api-1.2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc6/11.2.0.4/a483a046eee2f404d864a6ff5b09dc0e1be3fe6c/ojdbc6-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc6/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/ojdbc6-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.7/76069c915de3787f3ddd8726a56f47a95bfcbb0e/commons-validator-1.7.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.7/dce0d5f2c359f2a5fc2243310bba0b515d0df619/commons-validator-1.7-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/109c5be93362e6e651e417c51d1863477a22969c/trove4j-3.0.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.13.2/b27d128a85226e144f6e791aac1ddcd9f436a26f/jackson-dataformat-csv-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.13.2/6becd3182994885d8ed1e11b8b220fa14a5be153/jackson-dataformat-csv-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-open-id-connector/1.0.0/f449ab1d11afc613fb53486d5104e66d8222beb3/adempiere-open-id-connector-1.0.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-open-id-connector/1.0.0/c01169b263f7238b6a735f80d9dcc9b6daa09491/adempiere-open-id-connector-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-schemas/3.17/890114bfa82f5b6380ea0e9b0bf49b0af797b414/poi-ooxml-schemas-3.17.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/de3b21279df7e755e38275137539be5e2c80dd58/osgi-resource-locator-1.0.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/2f01d4501f52f63016fe70f7aea79c19cccb8d44/osgi-resource-locator-1.0.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/pdfa/7.1.13/d4a89f5d8946665aeccb1d232f3959d90cdbde15/pdfa-7.1.13.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.itextpdf/pdfa/7.1.13/18e9a296c69aa2dad0d696d7460e5c3644f7ad4b/pdfa-7.1.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-api/1.62.2/a93b6ee3761d48edd9a9279f20a58be1a245ad01/grpc-api-1.62.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-api/1.62.2/20dadf84aa6c2cc1bc7a378c7f0d98bd13f7a13a/grpc-api-1.62.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/c8cd68f41c63e60c89321caa95513376aace6711/javax.ws.rs-api-2.1.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/8.6.2/f1edd4d4645d7e8ba07de3302a272123f061cbb5/lucene-queries-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/8.6.2/86cb5b2cd6285288a3eb8c15714ce442c4b9511a/lucene-queries-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-pos-improvements/1.0.2/f43debb80cf6ece97c8856852aca13e8a3387d76/adempiere-pos-improvements-1.0.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-pos-improvements/1.0.2/425cbddfbea13faae492ea529bc6a615c385e5ea/adempiere-pos-improvements-1.0.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/jmespath-java/1.11.827/b6ec16df72e46b02305168c8d1292f7002e941ef/jmespath-java-1.11.827.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.amazonaws/jmespath-java/1.11.827/c6007c997d0826efcec1653bd326915085c3788b/jmespath-java-1.11.827-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/c51c00206bb913cd8612b24abd9fa98ae89719b1/commons-cli-1.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/40dfd9fdef125e19136135e68d54af6d9b0cfbb8/commons-cli-1.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/point-of-sales/3.9.4.001/7695f6ac4362a0a6af337dfd0b23f0ed92ecd29f/point-of-sales-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/point-of-sales/3.9.4.001/a5718e548de68ff8f1cc990886d7ab6cc55c5e1d/point-of-sales-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.10/6229be3465805c99db1142ad75e6c6ddeac0b04c/kotlin-stdlib-common-1.4.10.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.10/d971e5bb07a7f610eda65e5efc8decbd0548a270/kotlin-stdlib-common-1.4.10-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/it.sauronsoftware.cron4j/cron4j/2.2.5/da0dd0edee48b570cd1e23895e0ac80e09eb272b/cron4j-2.2.5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/it.sauronsoftware.cron4j/cron4j/2.2.5/d6770af24252351880f42657ceaa526e1d331d0c/cron4j-2.2.5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.2/2ab94758b0276a8a26102adf8d528cf6d0567b9a/t-digest-3.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.2/b1858d66a80a93f61f048cf542fc2751ec7971bf/t-digest-3.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/8.6.2/27c206ac7cd7ba7b3edb176c781718c99efb14e2/lucene-queryparser-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/8.6.2/3007c44424f490e5fad249f0d62b70df1ab5a134/lucene-queryparser-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.32/8b5f75ba29ddd5dc1bc448490df52e07bd58e948/jersey-server-2.32.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.32/4d8e0fa9027278db5ed5d02c1b651c5dec72a717/jersey-server-2.32-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.24.3/8c390ae28aa9bddf480fbc18672e07ffd86f3c3d/protobuf-java-util-3.24.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.24.3/bf874545de957b2ef9d88b39773ac57502e42dd/protobuf-java-util-3.24.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/2.3.0/80a402b12accd66d4be7e5dbcb44e42baa0bdd7c/core-2.3.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/2.3.0/fd91d6d085043aa7bc0c6772301507d3086401b2/core-2.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-geo/7.9.1/feebf983a9c48bd93a43034a1750f0611c9b4d68/elasticsearch-geo-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-geo/7.9.1/8a210ef72067d9aadf8731a7f3b7128f1fa82948/elasticsearch-geo-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/8.6.2/e9b93e2f6c5cdb74332b6b9aada4a190f20d45c3/lucene-spatial3d-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/8.6.2/3f71b811615c4fe7416b04c1f7662f70f42eaf88/lucene-spatial3d-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/2.8.0/d72d9464f764348fe08f99ff00b574e0abdaeded/kafka-raft-2.8.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/2.8.0/e6659a0fabd228c93d68af2277424a55aba3bce0/kafka-raft-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.8.0/49b64e09d81c0cc84b267edd0c2fd7df5a64c78c/okio-jvm-2.8.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.8.0/6d1b6e0ce288800b8662b4983a002620cd6ada95/okio-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta-regexp/jakarta-regexp/1.4/ea514a179ac1dd7e81c7e6594468b9b9910d298/jakarta-regexp-1.4.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.castor/castor-core/1.4.1/b973333a7ce1b8017dccba68068023c9d17f9872/castor-core-1.4.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.codehaus.castor/castor-core/1.4.1/81bca28867f437cd7abcb502582a990d6a4c69b3/castor-core-1.4.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/8.6.2/8f7e21a00095e0ebed741e2ee425da8019b47b6b/lucene-join-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/8.6.2/929366678402d1ae33eee4059a9d203182a07021/lucene-join-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.hawtbuf/hawtbuf/1.9/4a42b835d1df77db8c9a144a11ebb4600a372f5f/hawtbuf-1.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.hawtbuf/hawtbuf/1.9/6cb00b387469d1867bbb866d60fa099ad760138a/hawtbuf-1.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sourceforge.barbecue/barbecue/1.5-beta1/946380ea816fbc93cb591562af43997ded5c0a70/barbecue-1.5-beta1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sourceforge.barbecue/barbecue/1.5-beta1/363a84845554f87531abb9493dd2690321ef268/barbecue-1.5-beta1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/openid-authentication/3.9.4.001/f610d0436f88f458556779748d0018aaa9f15822/openid-authentication-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/openid-authentication/3.9.4.001/8d3b3a41a4d64f4b1d656d5a4e3a92d01c4dc640/openid-authentication-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/2298164a7c2484406f2aa5ac85b205d39019896f/commons-net-3.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/8cc516e03d35ecf8f4ca71511f7961f1a9339820/commons-net-3.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.50.Final/87b98225422fccf2bf113e169c45e683de200a3e/netty-transport-native-unix-common-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.50.Final/ac012fa9cf5c5e33b0b5cff1e20a3c538ace73db/netty-transport-native-unix-common-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-asm/3.0.7.RELEASE/cadd0ed7b1aeea0c2858ada0d6397e8423aad6a3/spring-asm-3.0.7.RELEASE.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-asm/3.0.7.RELEASE/30152fb33f5f7ca7a410dbd139857685ed67988b/spring-asm-3.0.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http/2.4.4/c789d449906458d4174126f6a4fefdd7a6008777/grizzly-http-2.4.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http/2.4.4/cd7921124be251b16a0106c3e273057b05dd05d2/grizzly-http-2.4.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/0.9.1/970d8d65f42a76c2fad104ea7f50e8f1daf38b8/scala-java8-compat_2.13-0.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/0.9.1/df551761e5ec6eb8c3900fefe3b788f053fc3550/scala-java8-compat_2.13-0.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.2/95f59cf63c3aadc1549578254af839a9c42ae84f/jackson-datatype-jdk8-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.2/2478f80222736def6773c433e01691473e4cb674/jackson-datatype-jdk8-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.1/268f0fe4df3eefe052b57c87ec48517d64fb2a10/log4j-api-2.11.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.1/acf35297ef03716fc14e11e2978d7c749ed3f7e5/log4j-api-2.11.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.0/84e309fbf21d857aac079a3c1fffd84284e1114d/junit-platform-commons-1.7.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.0/a382c78ca35b240e3b88b4d68ef6884a365631f0/junit-platform-commons-1.7.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-kafka-connector/1.1.9/deebf5744779bc800da38badc17eec4b18ad0388/adempiere-kafka-connector-1.1.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-kafka-connector/1.1.9/17bf229ce0c40ca63a70ca8377a8649a36d8b522/adempiere-kafka-connector-1.1.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.6/ed7a2f528c7389ea65746c22a01031613d98ab3d/scala-library-2.13.6.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.6/676a27724b92adf5e0080b3c75b7ba8dd0a0db71/scala-library-2.13.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.50.Final/42b556977c572a376172a3270537ee22203c1a35/netty-buffer-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.50.Final/53366d1684db7965ebd65328760b061729924581/netty-buffer-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.vavr/vavr/0.10.4/c120b6912f6e838fdd30638b8fd5ec1c84773319/vavr-0.10.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.vavr/vavr/0.10.4/b6509f9114d0354893803668e58b97965a41f2f6/vavr-0.10.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.13.2/5fd849945a575d2f7748d2955c24963d3ce21d5a/jackson-jaxrs-base-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.13.2/17e7f5b646c641f0cc1d52eb07aafcb537a974f6/jackson-jaxrs-base-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/5.0.1/a74c7f0a37046846e88d54f7cb6ea6d565c65f9c/HikariCP-5.0.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/5.0.1/9a803965be1f6709795aeaf17d7a71c18791dcda/HikariCP-5.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/2ef0187124bbfc7aed3038d4ffdd2241e8992937/commons-io-2.11.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt-api/0.11.2/57c34dce3e88f2972c5c5465b6291acfb5628084/jjwt-api-0.11.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt-api/0.11.2/54804d721762a37b2c77bec82e284e4b6522dc03/jjwt-api-0.11.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/950831646d014c9162999019a3cb17d5fc01ac0d/jopt-simple-5.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.4.01/3789d9fada2d3d458c4ba2de349d48780f381ee3/xml-apis-1.4.01.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.4.01/5502da0c4c0a7916a604356ef19394ccfa30cd4b/xml-apis-1.4.01-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.34/f9c6c7c6429a1ede8e73cf077bdca28ebff67681/jersey-client-2.34.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.34/95e68fedf856ce244ed510be12580a876c54cf9b/jersey-client-2.34-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.4.0/cb208278274bf12ebdb56c61bd7407e6f774d65a/jna-4.4.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.4.0/9d45d3dc35711eef7267d8b4fc2c0dc482ef9fd2/jna-4.4.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk14/1.38/14ff2dfec8578f5f6838c4d6a77a86789afe5382/bcmail-jdk14-1.38.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk14/1.38/a330bbe03efd892e3515e3f407dfba73f8568612/bcmail-jdk14-1.38-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/production/3.9.4.001/eded85ebab98de5850fae0aa41434cb26d459f4d/production-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/production/3.9.4.001/5478ad1421939072e7d55ea4e308eacab118b484/production-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.jgoodies/looks/2.0.4/305245fce950e4fb65b49fbbde31edfde875a854/looks-2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.jgoodies/looks/2.0.4/1eeef75f631271030764e523c164467f07d94bd2/looks-2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.11.0/9bb329db1cfc4e22462c9d6b43a8432f5850e92c/xercesImpl-2.11.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.11.0/af86e59459a503adec5e9b47426dd9fa2ac5f1f6/xercesImpl-2.11.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere.test/3.9.4.001/c42d8c37c305d4de6f8131b5eb6ec7d23f70e7de/adempiere.test-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere.test/3.9.4.001/1ac6f1ed8266a7eccb99cb5b45231e7e27a3cdc4/adempiere.test-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.bval/bval-jsr/1.1.2/3efb356c3cf3c64a891ea465b2045b6c762859f9/bval-jsr-1.1.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.bval/bval-jsr/1.1.2/ddf5312cfb6cd12f0de5fbff7ca54fb18ccdc693/bval-jsr-1.1.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.5.9/3b0e8eaff97fce87075c02fd764e4f2d04996f31/zookeeper-3.5.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.5.9/d79d5f32d3a0151f976d556cc9c0f81e2b2df711/zookeeper-3.5.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial-extras/8.6.2/9b145bd48c34e4a478f1e090a8424a3974ee23f1/lucene-spatial-extras-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial-extras/8.6.2/9bae1a71c5338ad460129d0a5c620a4886d93bbb/lucene-spatial-extras-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/content-type/2.2/9a894bce7646dd4086652d85b88013229f23724b/content-type-2.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.nimbusds/content-type/2.2/3701f6781ae50cfecceaff7a8a68a111d8322f24/content-type-2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.23.0/43a27853b6c7d54893e0b1997c2c778c347179eb/error_prone_annotations-2.23.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.23.0/532ee2653e231d34f2beef55b1738fb92dc3be0e/error_prone_annotations-2.23.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.vavr/vavr-match/0.10.4/64a1405f5846a77ab1c1ef2e86e08b30e3507321/vavr-match-0.10.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.vavr/vavr-match/0.10.4/9814969b89428935a61bb2d271247aeab83ca0de/vavr-match-0.10.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.10.5/4a48332c2df6f535d9dd9d904cd780ab26266e20/ant-1.10.5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.10.5/633d7a3e3eccca94ed390e08a6811f97ca6f004c/ant-1.10.5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_cert/11.2.0.4/937c4fe311c3a603fc3b05d4085cbdc631f00983/osdt_cert-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_cert/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/osdt_cert-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.3-android/f306708742ce2bf0fb0901216183bc14073feae/guava-32.1.3-jre.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.3-android/b765a950c76b93bdf9c6e3d9b06544d13f79c255/guava-32.1.3-android-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.50.Final/d2059030b86733c52fd999e63db7300414b487fa/netty-common-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.50.Final/21571e0a20775bdfc200205634aa0f3bdeab871f/netty-common-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-secure-sm/7.9.1/6c147408d9f3e26b0cbdd85aabb9ca78c4e7eec2/elasticsearch-secure-sm-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch-secure-sm/7.9.1/58e0ad5a1daf25b610744464957e81a32408a305/elasticsearch-secure-sm-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.0.7.RELEASE/61999bb2e1e5f7a1c13e91a58761c48dc1d71cf9/spring-expression-3.0.7.RELEASE.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.0.7.RELEASE/8f34eb890274c931967a8327f19998e96971e377/spring-expression-3.0.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.25.0-GA/442dc1f9fd520130bd18da938622f4f9b2e5fba3/javassist-3.25.0-GA.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.25.0-GA/f00308c31650161577a0d152898ec606a08945da/javassist-3.25.0-GA-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/5.0.0-alpha.11/870a80ee8c6c1b618d98a08fd1bb91c7bee131cc/JDA-5.0.0-alpha.11.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/5.0.0-alpha.11/a1f362d9b47c569a30410c1361a6bdf369d20dad/JDA-5.0.0-alpha.11-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/11.2.0.4/775e875ddd14bc79c2f8bbc3967cf3c664035b17/oraclepki-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/oraclepki-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/4381b152f738580aef4e436b2692a3db30609b26/slf4j-api-1.7.32-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/3acb4705652e16236558f0f4f2192cc33c3bd189/commons-codec-1.11.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/bce4ba84fd527950e35040b20a991c63e90e2850/commons-codec-1.11-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_core/11.2.0.4/c4cd2e3d1d11aa29f338d14a0bba770c674a2a34/osdt_core-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_core/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/osdt_core-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.32/7a1250b13b25a744af88b4f5e17e709c61cb65df/jersey-media-jaxb-2.32.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.32/746cce384bf3878a44c06df0ccfa1a18c165b9f9/jersey-media-jaxb-2.32-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/simplefan/11.2.0.4/307a7e203d7e141964158d181ca849d512d7e710/simplefan-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/simplefan/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/simplefan-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.1/d30aaf4d41d6ff0c760c8931d3b8dafc0293c91a/snappy-java-1.1.8.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.1/f522ac5bad03b20107573f15dcd99d241a3fa599/snappy-java-1.1.8.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.lbordowitz.openforecast/openforecast/0.5.0/2524180f20cab8d26ee52fc4a4b237b8f7d06d80/openforecast-0.5.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.github.lbordowitz.openforecast/openforecast/0.5.0/c6db590326b94e70ad00b67e2825f91b1ebff0c4/openforecast-0.5.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ucp/11.2.0.4/5520b4e492939b477cc9ced90c03bc72710dcaf3/ucp-11.2.0.4.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ucp/11.2.0.4/bc15f00ebacbeb0669f0ed925917c177912db7af/ucp-11.2.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.32/7c2d49e27cf04b19e542198908883dffe76b1cec/jersey-media-json-jackson-2.32.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.32/f9aab87f2a1e72ac97b96e0643aae0c5bd47dabc/jersey-media-json-jackson-2.32-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.konik/konik/1.3.2/44bac36d526f376b2030113811ac80904cc2cb78/konik-1.3.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.konik/konik/1.3.2/50b20acbf06d0b3cae7711f55f4cee77df8dd8d8/konik-1.3.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.13/853b96d3afbb7bf8cc303fe27ee96836a10c1834/httpcore-4.4.13.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.13/d6e6365dac44108fb2cc0684daea0d40bc6609f5/httpcore-4.4.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.50.Final/480ab17c1ebfb32fcd493577d3e3241dc56e62f4/netty-transport-native-epoll-4.1.50.Final.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.50.Final/6f23a42b50044727e53e1ffaeeb786d492b41763/netty-transport-native-epoll-4.1.50.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.6.1/114bd7afb4a1bd9993527f52a08a252b5d2acac5/hk2-api-2.6.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.6.1/911d7e334b8b230b491bb130af8404fdb7a81059/hk2-api-2.6.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.13.2/4fc77e1ec6922fc48bf1181e4b38f600dac222ff/jackson-dataformat-cbor-2.13.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.13.2/6ce6141f02e1c8b5031eedce397af3cea8679384/jackson-dataformat-cbor-2.13.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/f3c15fe970af864390c8d0634c9f16aca1b064a8/apiguardian-api-1.1.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.3/b0b14b3d12980912723fb8b66afb48dcda742fcb/okhttp-4.9.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.3/2d2338937cea04ac5321bc89f1ffdc93345df448/okhttp-4.9.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/f7d878153e86a1cdddf6b37850e00a9f8bff726f/commons-lang3-3.5-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.62.2/69e86c35140b3b1718d65635bb54ccecc4c12f14/grpc-context-1.62.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.62.2/deed411ef596a386d7ae9fbeae90bdbc18c1fdeb/grpc-context-1.62.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/2.8.0/3a9b539ed8ba7c71e0c4fe4e474ac46fc5ca3378/kafka_2.13-2.8.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/2.8.0/15635e506757c57029e4df2320bbbedd74302dfd/kafka_2.13-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.sf.jasperreports/jasperreports-fonts/6.21.0/4d14b40814a07ef4fc301f7faa7330a559e238af/jasperreports-fonts-6.21.0.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.6.0/48657987075fea2e2176634ae35aaa5e93c929ef/mockito-core-3.6.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.6.0/6abab55200d7bcb5bb4e0d50feaa0a6fcb6b9969/mockito-core-3.6.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/3fb15dd478bf8dcb039aa0d035f9fff9e4229c61/asm-9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/extend/3.9.4.001/2fac47e4b9afa4d8eb25b6491337397ef840fe4f/extend-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/extend/3.9.4.001/1edfbf3d65d417190eb2092a858d846f599ea8d2/extend-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/loan/3.9.4.001/26620cdbfcf506947af8fb1351d57a6572528798/loan-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/loan/3.9.4.001/8f1317cf202ba171f9c77d042b485f467997a6ec/loan-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/c872b46c601d8dc03633288b81269f9e42762cea/geronimo-jms_1.1_spec-1.1.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/c45b919f5434f9c33c546af9e6dfc5e1466b4b3e/geronimo-jms_1.1_spec-1.1.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.mqtt-client/mqtt-client/1.3/e3722695b436f4d254263eb50bdc0a5784f74634/mqtt-client-1.3.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.fusesource.mqtt-client/mqtt-client/1.3/c22deef0d0fc4d697f6862c849fa3559e92da9f1/mqtt-client-1.3-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch/7.9.1/b68fadfcebc107291e2ffac5c2564d90b946dd46/elasticsearch-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch/7.9.1/f85827392ac1e8f0b4fad6236d3e3ea2e652f53c/elasticsearch-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.8/6e1bee5a530caba91893604d6ab41d0edcecca9a/accessors-smart-2.4.8.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.8/f8801f70a860e4e3a9485f9923dde4204cb70c96/accessors-smart-2.4.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.0.1-jre/6e5d51a72d142f2d40a57dfb897188b36a95b489/guava-32.0.1-jre.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.0.1-jre/f491b792f07e0a5dc5a6695ea2f3632263b317e4/guava-32.0.1-jre-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/ae9c1aae0033af915cfa75d850eb9d880f21a701/slf4j-api-1.7.36-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1d064e61aad6c51cc77f9b59dc2cccc78e792f5a/failureaccess-1.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/6bdc9ec38b662632d7597d6f22942fb2dd2f5c4d/metrics-core-2.2.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/5372615b0c04c1913c95c34a0414cef720ca2855/geronimo-j2ee-management_1.1_spec-1.0.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/3d3b34584f4137c4ab7db496bceb5d75704f7354/geronimo-j2ee-management_1.1_spec-1.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/8a432c1d6825781e21a02db2e2c33c5fde2833b9/gson-2.8.9.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/e1167849f172a0b75d6ffe4e4b2f34b9259795bb/gson-2.8.9-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/a27082684a2ff0bf397666c3943496c44541d1ca/javax.servlet-api-4.0.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/49a9da44db6e6b5f44ce15ddfcfe2b6666151b25/javax.servlet-api-4.0.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.bval/bval-core/1.1.2/79ea1566eb8bf711dd28453b63223001e24a8c52/bval-core-1.1.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.bval/bval-core/1.1.2/afb0439a91d4201437838f9488b68ee9d34ec58b/bval-core-1.1.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/8.6.2/82d432972fecbeb3713329eca9240fd2bb322bd5/lucene-sandbox-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/8.6.2/4819abd5e9cdb643eef576a56a172a3db6b15ae5/lucene-sandbox-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/wms/3.9.4.001/21c7414b911e9dafdc0c0bcc67ae32c9de1f7891/wms-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/wms/3.9.4.001/85737aecb24ce86434c452bc19983ac32a8458cf/wms-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore-nio/4.4.12/84cd29eca842f31db02987cfedea245af020198b/httpcore-nio-4.4.12.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore-nio/4.4.12/8874d7eaacedca57d3c9a2af4ae0e8ea867142ab/httpcore-nio-4.4.12-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bctsp-jdk14/1.38/4821122f8390d15f4b5ee652621e2a2bb1f1bf16/bctsp-jdk14-1.38.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bctsp-jdk14/1.38/aeb07f434ed0e0a497c794cbf7b863fd2d4a5a17/bctsp-jdk14-1.38-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.64/3dac163e20110817d850d17e0444852a6d7d0bd7/bcpkix-jdk15on-1.64.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.64/5c87199786c06e1a53adf16b1998386bad52da89/bcpkix-jdk15on-1.64-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/51aa3138d72781ef879e9cb660daab3ac7c52c60/audience-annotations-0.5.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/8.6.2/de97930c2f5242124e52579eb3d23722e13f0f9d/lucene-core-8.6.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/8.6.2/dc931026a9c1b7f5eac073c79d2aa39e203a5ba9/lucene-core-8.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/5eacc6522521f7eacb081f95cee1e231648461e7/jakarta.validation-api-2.0.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/ef429a7f3bc2d2d1784a1135668a857a6aaedf31/jakarta.validation-api-2.0.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jfree/jcommon/1.0.23/a316f336ca996e0c6bec4e4fbd49be8f5e1c3968/jcommon-1.0.23.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.jfree/jcommon/1.0.23/76c1fec968d3f6e55cf9bea2855ad33d085a6b6/jcommon-1.0.23-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/asset/3.9.4.001/7adff7228c34b2247e010f649c253e8726f6b209/asset-3.9.4.001.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/asset/3.9.4.001/2623a0451293af6791a45cd0e2de61816b5bd17c/asset-3.9.4.001-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.7.RELEASE/e52176ba360e47d132bbc80dc144a916dd75eee7/spring-aop-3.0.7.RELEASE.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.7.RELEASE/feff9b02e66e8de037d05f32b4a961b8b53eb693/spring-aop-3.0.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/parent-join-client/7.9.1/1eabfa1452b281e5f28dce386c92d4d85af76e99/parent-join-client-7.9.1.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/parent-join-client/7.9.1/bb6fc5617e4ddc2e2cae78338001a3159a981d9d/parent-join-client-7.9.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-jwt-token/1.0.2/51baa501557cd4037d4d3b30786d2bcf60fca115/adempiere-jwt-token-1.0.2.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/io.github.adempiere/adempiere-jwt-token/1.0.2/a97b1b43cc9298d864d13bc5b3c0e3dfe1c2244b/adempiere-jwt-token-1.0.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/yamel/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.4.7/36bafd876978d225a0d2248ee5e97421f3277fd2/javax.mail-1.4.7.jar" sourcepath="/home/yamel/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.4.7/e09aa2196aeb873911c2deec74f69a11affefd28/javax.mail-1.4.7-sources.jar">
 		<attributes>
 			<attribute name="gradle.buildServer" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/base">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/adempiere-shw">
 		<attributes>
 			<attribute name="gradle.buildServer" value="true"/>
 		</attributes>
