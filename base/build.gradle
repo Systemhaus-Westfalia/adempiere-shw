@@ -17,7 +17,7 @@ repositories {
     	url = "https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-shw"
         credentials {
         	username = findProperty("deployUsername") ?: System.properties['deploy.user']
-            password = findProperty("deployPassword") ?: System.properties['deploy.token'] 
+            password = findProperty("deployToken") ?: System.properties['deploy.token'] 
 		}
 	}
     // ERP Repos
@@ -25,14 +25,14 @@ repositories {
     	url = "https://maven.pkg.github.com/erpya/Repository"
         credentials {
         	username = findProperty("deployUsername") ?: System.properties['deploy.user']
-            password = findProperty("deployPassword") ?: System.properties['deploy.token'] 
+            password = findProperty("deployToken") ?: System.properties['deploy.token'] 
 		}
     }
     maven {
     	url = "https://maven.pkg.github.com/adempiere/adempiere"
         credentials {
         	username = findProperty("deployUsername") ?: System.properties['deploy.user']
-            password = findProperty("deployPassword") ?: System.properties['deploy.token']
+            password = findProperty("deployToken") ?: System.properties['deploy.token']
 		}
 	}
 }
@@ -163,7 +163,7 @@ publishing {
             url = libraryRepo
             credentials {
                 username = findProperty("deployUsername") ?: System.properties['deploy.user']
-                password = findProperty("deployPassword") ?: System.properties['deploy.token'] 
+                password = findProperty("deployToken") ?: System.properties['deploy.token'] 
             }
         }
     }
