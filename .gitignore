@@ -7,7 +7,7 @@ build
 # Igno
 gradle.properties
 *.class
-
+.settings
 gradlew*
 gradle-wrapper*
 /bin/
