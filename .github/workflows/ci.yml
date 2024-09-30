@@ -42,5 +42,5 @@ jobs:
           arguments: build
         env:
           ADEMPIERE_LIBRARY_VERSION: 'build'
-          GITHUB_DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
-          GITHUB_DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          ORG_GRADLE_PROJECT_deployUsername: ${{ secrets.DEPLOY_USER }}
+          ORG_GRADLE_PROJECT_deployToken: ${{ secrets.DEPLOY_TOKEN }}
