@@ -128,11 +128,11 @@ dependencies {
 	// Point Of Sales Improvements (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-pos-improvements)
 	api "${baseGroupId}:adempiere-pos-improvements:1.0.2"
 	// Business Processors (To Task's and Schedulers) (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-business-processors)
-	api "${baseGroupId}:adempiere-business-processors:1.1.5"
+	api "${baseGroupId}:adempiere-business-processors:1.1.6"
 	// Engine as Queue (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-kafka-connector)
 	api "${baseGroupId}:adempiere-kafka-connector:1.4.2"
 	// Third part access using JWT (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-jwt-token)
-	api "${baseGroupId}:adempiere-jwt-token:1.0.3"
+	api "${baseGroupId}:adempiere-jwt-token:1.0.4"
 	// https://mvnrepository.com/artifact/com.nimbusds/oauth2-oidc-sdk
 	api 'com.nimbusds:oauth2-oidc-sdk:9.35'
 	// https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt
