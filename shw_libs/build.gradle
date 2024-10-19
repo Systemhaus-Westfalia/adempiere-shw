@@ -122,7 +122,7 @@ dependencies {
 
 	// ADempiere Projects with additional features
 	//	ADempiere gRPC Utils Base (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-grpc-utils)
-	api "${baseGroupId}:adempiere-grpc-utils:1.5.1"
+	api "${baseGroupId}:adempiere-grpc-utils:1.5.2"
 	// Dashboard Improvements (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-dashboard-improvements)
 	api "${baseGroupId}:adempiere-dashboard-improvements:1.0.8"
 	// Point Of Sales Improvements (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-pos-improvements)
@@ -130,7 +130,7 @@ dependencies {
 	// Business Processors (To Task's and Schedulers) (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-business-processors)
 	api "${baseGroupId}:adempiere-business-processors:1.1.6"
 	// Engine as Queue (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-kafka-connector)
-	api "${baseGroupId}:adempiere-kafka-connector:1.4.2"
+	api "${baseGroupId}:adempiere-kafka-connector:1.4.6"
 	// Third part access using JWT (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-jwt-token)
 	api "${baseGroupId}:adempiere-jwt-token:1.0.4"
 	// https://mvnrepository.com/artifact/com.nimbusds/oauth2-oidc-sdk
@@ -151,7 +151,7 @@ dependencies {
     api "com.shw:lsv-general:1.0.3"
     api "com.shw:electronic-invoicing-sv:1.0.2"
     // AWS3 Connector to use as File Storagee
-	api "${baseGroupId}:adempiere-s3-connector:1.0.4"
+	api "${baseGroupId}:adempiere-s3-connector:1.0.5"
 }
 
 

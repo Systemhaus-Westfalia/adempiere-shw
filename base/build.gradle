@@ -49,18 +49,6 @@ dependencies {
     )
     
 	//	ADempiere Core
-	api "${baseGroupId}:${packageName}:${baseVersion}"
-	// https://mvnrepository.com/artifact/org.apache.poi/poi
-	api 'org.apache.poi:poi:3.17'
-	// https://mvnrepository.com/artifact/commons-validator/commons-validator
-	api 'commons-validator:commons-validator:1.7'
-	api 'io.vavr:vavr:0.10.4'
-	api 'net.sourceforge.barbecue:barbecue:1.5-beta1'
-	// https://mvnrepository.com/artifact/io.konik/harness
-    api group: 'io.konik', name: 'harness', version: '1.0.0'
-    api "${baseGroupId}:adempiere-grpc-utils:1.5.1"
-
-	//	ADempiere Core
 	api "${baseGroupId}:base:${baseVersion}"
 	api "${baseGroupId}:point-of-sales:${baseVersion}"
 	api "${baseGroupId}:store:${baseVersion}"
@@ -87,42 +75,6 @@ dependencies {
 	api "${baseGroupId}:telegram-notifier:${baseVersion}"
 	api "${baseGroupId}:tools:${baseVersion}"
 	api "${baseGroupId}:jasperreports:${baseVersion}"
-	//	Others
-    compileOnly 'org.apache.tomcat:annotations-api:6.0.53'
-	api 'net.sf.jasperreports:jasperreports-fonts:6.21.0'
-
-	// ADempiere External Libraries
-	api 'com.github.jjYBdx4IL:ecs:1.4.2.1'
-	api 'com.itextpdf:itextpdf:5.5.13.3' // used by org.adempiere.pdf.iText7Document
-	api 'io.konik:konik:1.3.2' // used by org.adempiere.pdf.iText7Document
-	api 'io.vavr:vavr:0.10.4' // used by org.compiere.util.DB
-	api "org.codehaus.groovy:groovy-all:2.4.15"
-
-	// ADempiere Projects with additional features
-	// Dashboard Improvements
-	api "${baseGroupId}:adempiere-dashboard-improvements:1.0.8"
-	// Point Of Sales Improvements
-	api "${baseGroupId}:adempiere-pos-improvements:1.0.2"
-	// Business Processors (To Task's and Schedulers)
-	api "${baseGroupId}:adempiere-business-processors:1.1.6"
-	// Engine as Queue
-	api "${baseGroupId}:adempiere-kafka-connector:1.4.2"
-	// Third part access using JWT
-	api "${baseGroupId}:adempiere-jwt-token:1.0.4"
-	// https://mvnrepository.com/artifact/com.nimbusds/oauth2-oidc-sdk
-	api 'com.nimbusds:oauth2-oidc-sdk:9.35'
-	// https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt
-	api 'com.nimbusds:nimbus-jose-jwt:9.22'
-	// https://mvnrepository.com/artifact/com.nimbusds/content-type
-	api 'com.nimbusds:content-type:2.2'
-	// https://mvnrepository.com/artifact/net.minidev/json-smart
-	api 'net.minidev:json-smart:2.4.8'
-	// https://mvnrepository.com/artifact/net.minidev/accessors-smart
-	api 'net.minidev:accessors-smart:2.4.8'
-	//	Temporary projects
-	//	Keycloak and Okta connector (Open-ID based)
-	api "${baseGroupId}:adempiere-open-id-connector:1.0.0"
-	
 }
 
 
