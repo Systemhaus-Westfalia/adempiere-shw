@@ -130,7 +130,7 @@ dependencies {
 	// Business Processors (To Task's and Schedulers) (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-business-processors)
 	api "${baseGroupId}:adempiere-business-processors:1.1.8"
 	// Engine as Queue (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-kafka-connector)
-	api "${baseGroupId}:adempiere-kafka-connector:1.4.8"
+	api "${baseGroupId}:adempiere-kafka-connector:1.4.9"
 	// Third part access using JWT (https://central.sonatype.com/artifact/io.github.adempiere/adempiere-jwt-token)
 	api "${baseGroupId}:adempiere-jwt-token:1.0.4"
 	// https://mvnrepository.com/artifact/com.nimbusds/oauth2-oidc-sdk
