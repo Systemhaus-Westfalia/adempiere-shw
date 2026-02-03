@@ -158,7 +158,7 @@ dependencies {
 	api "${baseGroupId}:adempiere-open-id-connector:1.0.0"
 	api "org.erpya.adempiere.tools:print-queue:1.1.7"
     //  SHW Libraries
-    api "com.shw:lsv-general:1.0.37"
+    api "com.shw:lsv-general:1.0.38"
     //api "com.shw:electronic-invoicing-sv:1.0.2"
     // AWS3 Connector to use as File Storagee
 	api "${baseGroupId}:adempiere-s3-connector:1.0.7"
