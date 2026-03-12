@@ -156,7 +156,14 @@ dependencies {
 	//	Temporary projects
 	//	Keycloak and Okta connector (Open-ID  based)
 	api "${baseGroupId}:adempiere-open-id-connector:1.0.0"
+	//	--- Mirrored JARs (hosted at https://maven.pkg.github.com/Systemhaus-Westfalia/adempiere-shw) ---
+	//	These JARs are not available in any public Maven registry and have been mirrored manually.
+	//	TODO: request upstream publishers (erpya, adempiere-kafka-connector) to publish to Maven Central
+	//	      or GitHub Packages, then remove the mirror and update the groupId/repository accordingly.
+	//	Print Queue - required by PrintQueueValidator (registered as DB model validator)
 	api "org.erpya.adempiere.tools:print-queue:1.1.7"
+	//	Kafka Utility - required by KafkaLoader for payment processing via Kafka
+	api "org.spin.tools:kafka-util:1.0.4"
     //  SHW Libraries
     api "com.shw:lsv-general:1.0.42"
     //api "com.shw:electronic-invoicing-sv:1.0.2"
