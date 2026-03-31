@@ -3,7 +3,7 @@
 **Repository:** Systemhaus-Westfalia/adempiere-shw
 **Module:** shw_libs
 **Build File:** `/shw_libs/build.gradle`
-**Last Updated:** 2026-03-03
+**Last Updated:** 2026-03-31
 
 ---
 
@@ -62,7 +62,7 @@ All ADempiere dependencies use the base group ID: `io.github.adempiere`
 
 ### 1. adempiere-grpc-utils
 
-**Current Version:** 1.5.5
+**Current Version:** 1.6.4
 **Build.gradle Line:** 135
 
 **Purpose:**
@@ -122,7 +122,7 @@ curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+
 
 ### 3. adempiere-pos-improvements
 
-**Current Version:** 1.0.2
+**Current Version:** 1.0.4
 **Build.gradle Line:** 139
 
 **Purpose:**
@@ -184,7 +184,7 @@ curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+
 
 ### 5. adempiere-kafka-connector
 
-**Current Version:** 1.4.9
+**Current Version:** 1.5.1
 **Build.gradle Line:** 143
 
 **Purpose:**
@@ -358,7 +358,7 @@ https://github.com/erpya/print-queue/releases
 
 ### lsv-general
 
-**Current Version:** 1.0.42
+**Current Version:** 1.0.46
 **Group ID:** com.shw
 **Build.gradle Line:** 161
 
@@ -486,7 +486,7 @@ Once tested, publish a new version of adempiere-shw:
 
 ```bash
 # Update version in gradle.properties or root build.gradle
-# Example: patchVersion = "3.9.4.001-1.1.50"
+# Example: patchVersion = "3.9.4.001-1.1.53"
 
 # Build and publish
 ./gradlew publish
@@ -498,10 +498,10 @@ Update the reference in `adempiere-shw-zk/build.gradle`:
 
 ```gradle
 // Before
-def adempiereSHWRelease = '3.9.4.001-1.1.49'
+def adempiereSHWRelease = '3.9.4.001-1.1.52'
 
 // After
-def adempiereSHWRelease = '3.9.4.001-1.1.50'
+def adempiereSHWRelease = '3.9.4.001-1.1.53'
 ```
 
 Then rebuild and redeploy the gateway stack.
@@ -512,7 +512,7 @@ Then rebuild and redeploy the gateway stack.
 
 ### Automated Checking Script
 
-A ready-to-use script is available to check all ADempiere dependencies for updates. The script compares the current version in `build.gradle` with the latest versions available on **both Maven Central and GitHub Packages**.
+A ready-to-use script is available to check all ADempiere dependencies for updates. The script compares the current version in `build.gradle` with the latest versions from **GitHub Releases** (authoritative, public, no authentication required) and Maven Central (reference).
 
 **Script Location:** `/docs/check-adempiere-deps.sh`
 
@@ -521,30 +521,17 @@ A ready-to-use script is available to check all ADempiere dependencies for updat
 ```bash
 # From the docs directory
 cd adempiere-shw/docs
-
-# Option 1: Pass token as argument (recommended for security)
-./check-adempiere-deps.sh YOUR_GITHUB_TOKEN
-
-# Option 2: Without token (skips GitHub Packages check)
 ./check-adempiere-deps.sh
-
-# Option 3: Use environment variable
-GITHUB_TOKEN="your_token_here" ./check-adempiere-deps.sh
 ```
 
-**Authentication Priority:**
-The script checks for GitHub token in this order:
-1. Command-line argument (`$1`)
-2. `GITHUB_TOKEN` environment variable
-3. `deployToken` in `~/.gradle/gradle.properties`
+No token or authentication needed.
 
 **Features:**
 - ✅ Displays current version from `build.gradle`
-- ✅ Fetches latest version from **Maven Central** (public)
-- ✅ Fetches latest version from **GitHub Packages** (requires auth)
-- ✅ Color-coded status (up to date / update available / source indication)
+- ✅ Fetches latest version from **GitHub Releases** (authoritative, public)
+- ✅ Fetches latest version from **Maven Central** (reference only — may lag behind)
+- ✅ Color-coded status (up to date / update available / ahead of release)
 - ✅ Checks all 8 ADempiere dependencies
-- ✅ Shows which repository has the latest version
 - ✅ Provides update instructions
 
 **Example Output:**
@@ -556,113 +543,53 @@ ADempiere Dependencies Version Check
 
 Build file: adempiere-shw/shw_libs/build.gradle
 Repositories checked:
-  - Maven Central (public)
-  - GitHub Packages (requires authentication)
+  - GitHub Releases (authoritative, public, no auth needed)
+  - Maven Central   (reference, may lag behind)
 
 Checking dependencies...
 
-Dependency                          Current    Maven Central GitHub Pkg    Status
------------------------------------ ---------- ------------- ------------- -------------------------
-adempiere-grpc-utils                1.5.5      1.4.8         1.5.5         ✓ Latest (GitHub)
-adempiere-dashboard-improvements    1.0.8      1.0.8         1.0.8         ✓ Up to date (both)
-adempiere-pos-improvements          1.0.2      1.0.2         1.0.2         ✓ Up to date (both)
-adempiere-business-processors       1.1.8      1.1.5         1.1.8         ✓ Latest (GitHub)
-adempiere-kafka-connector           1.4.9      1.4.2         1.4.9         ✓ Latest (GitHub)
-adempiere-jwt-token                 1.0.4      1.0.4         1.0.4         ✓ Up to date (both)
-adempiere-open-id-connector         1.0.0      1.0.0         1.0.0         ✓ Up to date (both)
-adempiere-s3-connector              1.0.7      1.0.5         1.0.7         ✓ Latest (GitHub)
+Dependency                          Current    GH Release    Maven Ctrl    Status
+----------------------------------- ---------- ------------- ------------- -----------------------------------
+adempiere-grpc-utils                1.6.4      1.6.4         1.5.5         ✓ Up to date
+adempiere-dashboard-improvements    1.0.8      1.0.8         1.0.8         ✓ Up to date
+adempiere-pos-improvements          1.0.4      1.0.4         1.0.2         ✓ Up to date
+adempiere-business-processors       1.1.8      1.1.8         1.1.5         ✓ Up to date
+adempiere-kafka-connector           1.5.1      1.5.1         1.4.2         ✓ Up to date
+adempiere-jwt-token                 1.0.4      1.0.4         1.0.4         ✓ Up to date
+adempiere-open-id-connector         1.0.0      1.0.0         1.0.0         ✓ Up to date
+adempiere-s3-connector              1.0.7      1.0.7         1.0.5         ✓ Up to date
 
 ========================================================================
 Legend:
-  ✓ Up to date (both)    - Current version matches both sources
-  ✓ Latest (GitHub)      - Using latest from GitHub Packages
-  ✓ Up to date (Maven)   - Using latest from Maven Central
-  ⚠ Newer on GitHub       - GitHub Packages has newer version
-  ⚠ Update available      - Newer version available
-  ? Unknown               - Cannot determine status
-  ✗ Error                 - Could not determine version
+  ✓ Up to date                   - Current matches latest GitHub Release
+  ✓ Up to date (Maven)           - Matches Maven Central (no GH Release found)
+  ↑ Ahead of latest release      - Current is newer than latest release
+  ⚠ Update available: X → Y      - GitHub Release Y is newer than current X
+  ✗ Not found in build.gradle    - Dependency not found
 ========================================================================
 ```
 
 **System Requirements:**
 
-The script requires the following tools to be installed on your system:
-
-| Tool | Purpose | Required | Package |
+| Tool | Purpose | Required | Install |
 |------|---------|----------|---------|
-| `curl` | Fetch repository data | ✅ Yes | curl |
-| `jq` | Parse JSON from Maven Central API | ✅ Yes | jq |
-| `xmllint` | Parse XML from GitHub Packages | ⚠️ Recommended | libxml2-utils |
+| `curl` | Fetch repository data | ✅ Yes | `sudo apt install curl` |
+| `jq` | Parse JSON responses | ✅ Yes | `sudo apt install jq` |
 
 **Installation:**
 
 ```bash
 # Ubuntu/Debian
-sudo apt install curl jq libxml2-utils
-
-# Mac (xmllint usually pre-installed)
-brew install curl jq libxml2
-
-# Verify installation
-curl --version
-jq --version
-xmllint --version
+sudo apt install curl jq
 ```
-
-**Note about xmllint:**
-- `xmllint` is used to parse `maven-metadata.xml` from GitHub Packages
-- If not installed, the script falls back to `grep` (less robust but works)
-- On most Linux systems, `xmllint` is already installed via `libxml2-utils`
-- Test if installed: `command -v xmllint`
-
-**Authentication for GitHub Packages:**
-
-The script needs a GitHub token to check GitHub Packages. It will automatically look for:
-
-1. `GITHUB_TOKEN` environment variable
-2. `deployToken` in `~/.gradle/gradle.properties`
-
-To set up authentication:
-
-**Option 1: Environment variable**
-```bash
-export GITHUB_TOKEN="ghp_your_token_here"
-```
-
-**Option 2: Gradle properties**
-```bash
-# Add to ~/.gradle/gradle.properties
-deployToken=ghp_your_token_here
-deployUsername=your_github_username
-```
-
-**Generate a token:**
-- Go to: https://github.com/settings/tokens
-- Click "Generate new token (classic)"
-- Select scopes: `read:packages`
-- Copy the token
-
-**Why Two Repositories?**
-
-ADempiere projects publish to both repositories with different strategies:
-
-- **GitHub Packages**: Primary release location, gets updates first
-- **Maven Central**: Secondary location, may lag behind or only receive stable releases
-
-Your `build.gradle` prioritizes repositories in this order:
-1. `mavenLocal()` - Local cache (fastest)
-2. `maven.pkg.github.com/adempiere/adempiere` - GitHub Packages (primary source)
-3. `mavenCentral()` - Maven Central (fallback)
-
-This means Gradle will use GitHub Packages versions when available, which explains why your current versions may be newer than Maven Central's "latest".
 
 ### Manual Monitoring
 
-**GitHub Packages:** https://github.com/orgs/adempiere/packages
-Check this page regularly for new package versions.
+**GitHub Releases:** https://github.com/adempiere
+Navigate to each library repository and check the Releases tab.
 
 **Maven Central:** https://central.sonatype.com/namespace/io.github.adempiere
-All ADempiere packages published here.
+Reference only — may lag behind GitHub Releases.
 
 ### Update Frequency Recommendations
 
@@ -751,5 +678,5 @@ Document dependency changes in release notes:
 
 **Document Version:** 1.0
 **Created:** 2026-03-03
-**Last Updated:** 2026-03-03
+**Last Updated:** 2026-03-31
 **Maintained By:** Systemhaus-Westfalia Development Team
