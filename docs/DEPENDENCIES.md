@@ -82,7 +82,14 @@ Essential for communication between ADempiere services in the microservices arch
 **Update Impact:** HIGH
 Changes to gRPC utils can affect all service communications. Test thoroughly after updates.
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-grpc-utils/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -109,7 +116,14 @@ Extends the standard ADempiere dashboard with custom visualizations and widgets 
 **Update Impact:** MEDIUM
 Dashboard enhancements are typically UI-focused. Test dashboard rendering after updates.
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-dashboard-improvements/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -137,7 +151,14 @@ Critical for retail/POS operations in Westfalia customizations. Provides:
 **Update Impact:** HIGH
 POS functionality is business-critical. Thorough testing required, especially payment processing.
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-pos-improvements/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -165,7 +186,14 @@ Enables automated business processes such as:
 **Update Impact:** MEDIUM
 Affects scheduled tasks. Verify all schedulers work correctly after updates.
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-business-processors/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -197,7 +225,14 @@ Core infrastructure component. Affects event processing and async operations.
 - Requires Kafka server running in adempiere-ui-gateway stack
 - Kafka service configured in docker-compose
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-kafka-connector/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -228,7 +263,14 @@ Security-critical component. Test authentication thoroughly after updates.
 - `com.nimbusds:oauth2-oidc-sdk:9.35`
 - `com.nimbusds:nimbus-jose-jwt:9.22`
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-jwt-token/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -257,7 +299,14 @@ Security and authentication component. Thorough testing required.
 
 **Note:** Listed as "Temporary projects" in build.gradle - may be experimental or under development.
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-open-id-connector/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
@@ -292,7 +341,14 @@ File storage operations. Test file upload/download after updates.
 **Related Dependencies:**
 - `com.amazonaws:aws-java-sdk-s3:1.11.827`
 
-**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
+**Check for Updates:**
+```bash
+# Via script (checks all dependencies at once)
+cd adempiere-shw/docs && ./check-adempiere-deps.sh
+
+# Or check this dependency directly
+curl -s "https://api.github.com/repos/adempiere/adempiere-s3-connector/releases/latest" | jq -r '.tag_name'
+```
 
 ---
 
