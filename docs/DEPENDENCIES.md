@@ -76,17 +76,13 @@ Essential for communication between ADempiere services in the microservices arch
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-grpc-utils
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-grpc-utils
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-grpc-utils *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-grpc-utils
 
 **Update Impact:** HIGH
 Changes to gRPC utils can affect all service communications. Test thoroughly after updates.
 
-**Check for Updates:**
-```bash
-# Check Maven Central
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-grpc-utils&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -107,16 +103,13 @@ Extends the standard ADempiere dashboard with custom visualizations and widgets 
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-dashboard-improvements
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-dashboard-improvements
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-dashboard-improvements *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-dashboard-improvements
 
 **Update Impact:** MEDIUM
 Dashboard enhancements are typically UI-focused. Test dashboard rendering after updates.
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-dashboard-improvements&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -138,16 +131,13 @@ Critical for retail/POS operations in Westfalia customizations. Provides:
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-pos-improvements
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-pos-improvements
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-pos-improvements *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-pos-improvements
 
 **Update Impact:** HIGH
 POS functionality is business-critical. Thorough testing required, especially payment processing.
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-pos-improvements&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -169,16 +159,13 @@ Enables automated business processes such as:
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-business-processors
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-business-processors
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-business-processors *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-business-processors
 
 **Update Impact:** MEDIUM
 Affects scheduled tasks. Verify all schedulers work correctly after updates.
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-business-processors&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -200,7 +187,7 @@ Enables event-driven architecture for:
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-kafka-connector
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-kafka-connector
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-kafka-connector *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-kafka-connector
 
 **Update Impact:** HIGH
@@ -210,10 +197,7 @@ Core infrastructure component. Affects event processing and async operations.
 - Requires Kafka server running in adempiere-ui-gateway stack
 - Kafka service configured in docker-compose
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-kafka-connector&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -234,7 +218,7 @@ Enables secure API access for:
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-jwt-token
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-jwt-token
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-jwt-token *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-jwt-token
 
 **Update Impact:** HIGH
@@ -244,10 +228,7 @@ Security-critical component. Test authentication thoroughly after updates.
 - `com.nimbusds:oauth2-oidc-sdk:9.35`
 - `com.nimbusds:nimbus-jose-jwt:9.22`
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-jwt-token&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -268,7 +249,7 @@ Enables enterprise SSO capabilities:
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-open-id-connector
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-open-id-connector
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-open-id-connector *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-open-id-connector
 
 **Update Impact:** HIGH
@@ -276,10 +257,7 @@ Security and authentication component. Thorough testing required.
 
 **Note:** Listed as "Temporary projects" in build.gradle - may be experimental or under development.
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-open-id-connector&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -301,7 +279,7 @@ Enables cloud-based file storage for:
 
 **Source:**
 - **GitHub:** https://github.com/adempiere/adempiere-s3-connector
-- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-s3-connector
+- **Maven Central:** https://central.sonatype.com/artifact/io.github.adempiere/adempiere-s3-connector *(informational only — lags behind GitHub Packages)*
 - **GitHub Packages:** https://github.com/orgs/adempiere/packages?repo_name=adempiere-s3-connector
 
 **Update Impact:** MEDIUM
@@ -314,10 +292,7 @@ File storage operations. Test file upload/download after updates.
 **Related Dependencies:**
 - `com.amazonaws:aws-java-sdk-s3:1.11.827`
 
-**Check for Updates:**
-```bash
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-s3-connector&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
-```
+**Check for Updates:** Use `docs/check-adempiere-deps.sh` (see [Version Monitoring](#version-monitoring)).
 
 ---
 
@@ -448,12 +423,12 @@ For ADempiere dependencies:
 # Navigate to shw_libs directory from project root
 cd adempiere-shw/shw_libs
 
-# Check each dependency (example for grpc-utils)
-curl -s "https://search.maven.org/solrsearch/select?q=g:io.github.adempiere+AND+a:adempiere-grpc-utils&rows=1&wt=json" | jq '.response.docs[0].latestVersion'
+# Check all dependencies at once
+cd adempiere-shw/docs
+./check-adempiere-deps.sh
 ```
 
-Or visit Maven Central directly:
-- https://central.sonatype.com/artifact/io.github.adempiere
+> **Note:** Maven Central also lists these packages but lags behind. Do not use it to determine whether an update is available.
 
 #### 2. Update build.gradle
 
@@ -512,7 +487,7 @@ Then rebuild and redeploy the gateway stack.
 
 ### Automated Checking Script
 
-A ready-to-use script is available to check all ADempiere dependencies for updates. The script compares the current version in `build.gradle` with the latest versions from **GitHub Releases** (authoritative, public, no authentication required) and Maven Central (reference).
+A ready-to-use script is available to check all ADempiere dependencies for updates. The script compares the current version in `build.gradle` with the latest versions from **GitHub Releases** (authoritative, public, no authentication required). Maven Central is shown as a reference column only — it lags behind and should not be used to decide whether an update is needed.
 
 **Script Location:** `/docs/check-adempiere-deps.sh`
 
@@ -529,7 +504,7 @@ No token or authentication needed.
 **Features:**
 - ✅ Displays current version from `build.gradle`
 - ✅ Fetches latest version from **GitHub Releases** (authoritative, public)
-- ✅ Fetches latest version from **Maven Central** (reference only — may lag behind)
+- ✅ Shows **Maven Central** version as a reference column (informational only)
 - ✅ Color-coded status (up to date / update available / ahead of release)
 - ✅ Checks all 8 ADempiere dependencies
 - ✅ Provides update instructions
@@ -586,10 +561,9 @@ sudo apt install curl jq
 ### Manual Monitoring
 
 **GitHub Releases:** https://github.com/adempiere
-Navigate to each library repository and check the Releases tab.
+Navigate to each library repository and check the Releases tab. This is the authoritative source.
 
-**Maven Central:** https://central.sonatype.com/namespace/io.github.adempiere
-Reference only — may lag behind GitHub Releases.
+> **Note:** These packages also appear on Maven Central (`https://central.sonatype.com/namespace/io.github.adempiere`) but that mirror lags behind. Never use Maven Central to decide whether an update is available for `io.github.adempiere` packages.
 
 ### Update Frequency Recommendations
 
@@ -672,7 +646,7 @@ Document dependency changes in release notes:
 - **adempiere-ui-gateway:** https://github.com/Systemhaus-Westfalia/adempiere-ui-gateway
 - **adempiere-shw-zk:** https://github.com/Systemhaus-Westfalia/adempiere-shw-zk
 - **ADempiere Packages:** https://github.com/orgs/adempiere/packages
-- **Maven Central:** https://central.sonatype.com/namespace/io.github.adempiere
+- **Maven Central** *(informational only)*: https://central.sonatype.com/namespace/io.github.adempiere
 
 ---
 
