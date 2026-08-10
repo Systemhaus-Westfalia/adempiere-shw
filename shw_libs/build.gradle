@@ -164,6 +164,9 @@ dependencies {
 	api "org.erpya.adempiere.tools:print-queue:1.1.7"
 	//	Kafka Utility - required by KafkaLoader for payment processing via Kafka
 	api "org.spin.tools:kafka-util:1.0.4"
+
+	// New Rhino
+	api "org.mozilla:rhino:1.7.14"
     //  SHW Libraries
     api "com.shw:lsv-general:EI2_0.0.8"
     //api "com.shw:electronic-invoicing-sv:1.0.2"
